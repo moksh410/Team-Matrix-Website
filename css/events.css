@@ -1,0 +1,321 @@
+/* Cyber Jagrukta Diwas Section Styles */
+.event-section {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.event-header {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: azure;
+    text-align: center;
+}
+
+.event-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.games-list {
+    margin: 20px 0;
+    color: burlywood;
+}
+
+.photos-container {
+max-width: 1200px; 
+margin: 0 auto; 
+}
+
+.photos-grid {
+display: flex;
+flex-wrap: wrap;
+gap: 15px; 
+justify-content: center; 
+}
+
+.photo {
+width: 30%; 
+aspect-ratio: 4 / 3; 
+background-size: cover; 
+background-position: center; 
+border-radius: 5px; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+transition: transform 0.3s ease; 
+}
+
+.photo:hover {
+transform: scale(1.1); 
+}
+
+@media (max-width: 768px) {
+.photo {
+    width: 45%; 
+}
+}
+
+@media (max-width: 500px) {
+.photo {
+    width: 100%; 
+}
+}
+
+.text-blk {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    line-height: 25px;
+}
+
+countdown-container {
+        text-align: center;
+        margin-top: 20px;
+        color: white;
+        font-size: 24px;
+    }
+
+    countdown-timer {
+        font-weight: bold;
+    }
+    .gallery-section {
+    margin-bottom: 40px;
+}
+.gallery img {
+    width: 250px;  
+    height: 250px; 
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+.lightbox-content img {
+    max-width: 100%; 
+    max-height: 90vh; 
+    object-fit: contain; 
+}
+.responsive-container {
+display: flex;
+justify-content: center;  /* Centers horizontally */
+margin-top: 50px;
+}
+
+.matrix {
+font-size: clamp(1.5rem, 4vw, 3rem); /* Adjusts size based on screen width */
+}
+
+.gallery-section {
+display: flex;
+justify-content: center;
+padding: 20px;
+}
+
+.gallery {
+display: grid;
+grid-template-columns: repeat(4, 1fr); /* 4 images per row on desktop */
+gap: 15px;
+max-width: 80%;
+justify-content: center;
+}
+
+/* Fix image sizes */
+.gallery img {
+width: 250px;  /* Fixed width */
+height: 220px; /* Fixed height */
+object-fit: cover;
+border-radius: 8px;
+transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+transform: scale(1.05);
+}
+
+/* Tablet view */
+@media (max-width: 1024px) {
+.gallery {
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    max-width: 90%;
+}
+
+.gallery img {
+    width: 220px;
+    height: 200px;
+}
+}
+
+/* Mobile view (1 image per row) */
+@media (max-width: 768px) {
+.gallery-section .gallery {
+    display: grid;
+    grid-template-columns: 1fr !important; /* Force one column */
+    max-width: 100%;
+    justify-items: center;
+}
+
+.gallery-section .gallery img {
+    width: 90% !important;  /* Responsive width */
+    height: auto !important; /* Keep natural aspect ratio */
+}
+}
+@media (max-width: 480px){
+.highlights{
+    margin: 40px auto;
+max-width: 800px;
+padding: 20px;
+background: rgba(0, 0, 0, 0.8);
+border: 2px solid greenyellow;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+text-align: center;
+color: white;
+font-size: 18px;
+}
+
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+.gallery {
+    grid-template-columns: repeat(2, 1fr); /* Still 2 images per row */
+    max-width: 100%;
+}
+
+.gallery img {
+    width: 180px;  /* Adjusted for very small screens */
+    height: 230px;
+}
+}
+
+
+        .bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+
+
+
+
+.cjd-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.cjd-section header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.cjd-section h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.cjd-section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Session Layout */
+.sessions {
+    display: flex;
+    flex-direction: column; /* Stack session cards vertically */
+    gap: 2rem;
+}
+
+.session-card {
+    background-color: rgba(40, 40, 40, 0.5);;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.session-header h2 {
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin: 10px;
+}
+
+.session-header p {
+    font-size: 1.1rem;
+    color: azure;
+    margin: 10px;
+}
+
+.session-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.session-images img {
+    width: 100%; /* Ensure the images take up full width of their grid cell */
+    height: 300px; /* Set a fixed height to ensure consistency */
+    object-fit: cover; /* Ensure images cover the area without stretching */
+    border-radius: 8px;
+}
+
+.session-description {
+    font-size: 1rem;
+    color: #555;
+    padding: 0px 0px 10px 10px;
+}
+
+.session-description p {
+    text-align: justify;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .session-images {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .session-images {
+        grid-template-columns: 1fr; /* 1 image per row on mobile screens */
+        padding: 10px;
+    }
+
+    .session-header h2 {
+        font-size: 25px;
+    }
+    .session-header p {
+        font-size: 18px;
+    }
+
+    .session-description {
+        font-size: 15px;
+        text-align: justify;
+    }
+}
+

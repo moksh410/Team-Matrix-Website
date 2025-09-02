@@ -1,0 +1,233 @@
+.bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+
+  .photo-section {
+    width: 200%;
+    height: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: rgba(40, 40, 40, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+  }
+  .photo-section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .animation1{
+      opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+  }
+  .animation1.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .landscape-image {
+    width: 2000px;
+    border-radius: 8px;
+    max-height: 500px;
+  }
+
+  .photo-content {
+    margin-top: 20px;
+  }
+
+  .photo-content h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+
+  .photo-content p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    column-count: 3;
+    column-gap: 30px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  @media (max-width: 768px) {
+    .photo-content p {
+      column-count: 2;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .photo-content p {
+      column-count: 1;
+      font-size: 16px;
+    }
+  }
+
+  .mentor-section {
+    display: flex;
+    margin: 30px auto;
+    background: rgba(65, 71, 79, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    padding: 25px;
+  }
+
+  .mentor-photo {
+    flex: 1 1 300px;
+    max-width: 350px;
+  }
+
+  .mentor-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .mentor-content {
+    flex: 2 1 500px;
+    padding: 10px 30px;
+  }
+
+  .mentor-content h2 {
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: cornsilk;
+    font-weight: 600;
+    border-left: 5px solid #dbde98;
+    padding-left: 15px;
+  }
+
+  .mentor-content p {
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    line-height: 1.7;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    .mentor-section {
+      flex-direction: column;
+    }
+
+    .mentor-photo,
+    .mentor-content {
+      max-width: 100%;
+    }
+
+    .mentor-photo img {
+      border-right: none;
+      border-bottom: 1px solid #eee;
+    }
+
+    .mentor-content {
+      padding: 5px;
+      p{
+        text-align: justify;
+      }
+
+      h2{
+          font-size: 26px;
+      }
+    }
+
+  }
+  .text-light-gray {
+    color: #e0e0e0 !important;
+}
+
+.feature-box {
+    background: rgba(32, 32, 32, 0.9) !important;
+}
+
+.feature-box:hover {
+    background: rgba(40, 40, 40, 0.95) !important;
+}
+
+.feature-box-content span {
+    color: #00ff00 !important;
+}
+
+.feature-box:hover .feature-box-content span {
+    color: #00ff00 !important;
+}
+
+.feature-box:hover .text-light-gray {
+    color: #ffffff !important;
+}
+
+.feature-box-overlay {
+    background: transparent !important;
+}
+.tab-link {
+    transition: all 0.3s ease;
+}
+
+.tab-link.active {
+    color: #00ff00 !important;
+}
+
+.about-section {
+    transition: opacity 0.3s ease;
+}
+
+.bg-dark {
+    background-color: #1a1a1a !important;
+}
+
+.text-light-gray {
+    color: #b0b0b0 !important;
+}
+
+.border-color-light-gray {
+    border-color: #333333 !important;
+}
+
+.hover-text-white:hover {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+footer .btn-primary {
+    background-color: #00ff00;
+    border: none;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+footer .btn-primary:hover {
+    background-color: #00cc00;
+}
+
+footer input::placeholder {
+    color: #808080 !important;
+}
+
+footer .form-control:focus {
+    border-color: #00ff00;
+    box-shadow: none;
+}
+
+footer ul li {
+    transition: transform 0.3s ease;
+}
+
+footer ul li:hover {
+    transform: translateX(5px);
+}

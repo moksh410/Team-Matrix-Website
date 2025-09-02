@@ -1,0 +1,132 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Container for the entire team section */
+.team-container {
+    background: rgba(0, 0, 0, 0.5); /* Lighter black background with more transparency */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Lighter shadow */
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    backdrop-filter: blur(5px); /* Subtle blur for glassmorphism effect */
+}
+
+/* Heading style */
+h1 {
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: green; /* Green color */
+    border-bottom: 2px solid #4caf50;
+    display: inline-block;
+    padding-bottom: 10px;
+    background: linear-gradient(90deg, rgba(76, 175, 80, 1) 0%, rgba(56, 142, 60, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 2s ease-in-out;
+}
+/* Grid layout for team members */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding-bottom: 40px;
+}
+
+/* Each team member card */
+.team-member {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Lighter shadow */
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    animation: fadeInUp 0.8s ease-in-out;
+    backdrop-filter: blur(5px); /* Glassmorphism effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(76, 175, 80, 0.3); /* Lighter green border */
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Lighter shadow on hover */
+    background: rgba(255, 255, 255, 0.2); /* Slightly more opaque on hover */
+    border: 1px solid rgba(76, 175, 80, 0.5); /* Darker green border on hover */
+}
+
+/* Style for team member photos */
+.team-photo {
+    width: 100%;
+    max-width: 200px; /* Increased maximum width for images */
+    height: 200px; /* Increased height */
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid rgba(76, 175, 80, 0.3); /* Lighter green border */
+}
+
+.team-member:hover .team-photo {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7); /* Slightly darker shadow on hover */
+}
+
+/* Name of the team member */
+.team-member h2 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+    color: #fff;
+    transition: color 0.3s;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.team-member:hover h2 {
+    color: #4caf50; /* Green color on hover */
+}
+
+/* Description of the team member */
+.team-member p {
+    margin: 0;
+    color: bisque;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+/* Add a subtle animation to the cards */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation for the heading */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
