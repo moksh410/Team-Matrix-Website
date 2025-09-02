@@ -1,0 +1,620 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Team Matrix</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="ThemeZaa">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="Team Matrix - A student driven committee dedicated to spread awareness regarding Cyber Security!">
+        <!-- favicon icon -->
+        <link rel="shortcut icon" href="images/title icon 1.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <!-- google fonts preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" href="css/news.css"/>
+        <link rel="stylesheet" href="css/vendors.min.css"/>
+        <link rel="stylesheet" href="css/icon.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="css/teamcss.css"/>     
+
+<style>
+    .bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .text-light-gray {
+            color: #e0e0e0 !important;
+        }
+
+        .feature-box {
+            background: rgba(32, 32, 32, 0.9) !important;
+        }
+
+        .feature-box:hover {
+            background: rgba(40, 40, 40, 0.95) !important;
+        }
+
+        .feature-box-content span {
+            color: #00ff00 !important;
+        }
+
+        .feature-box:hover .feature-box-content span {
+            color: #00ff00 !important;
+        }
+
+        .feature-box:hover .text-light-gray {
+            color: #ffffff !important;
+        }
+
+        .feature-box-overlay {
+            background: transparent !important;
+        }
+        .tab-link {
+            transition: all 0.3s ease;
+        }
+
+        .tab-link.active {
+            color: #00ff00 !important;
+        }
+
+        .about-section {
+            transition: opacity 0.3s ease;
+        }
+
+        .bg-dark {
+            background-color: #1a1a1a !important;
+        }
+
+        .text-light-gray {
+            color: #b0b0b0 !important;
+        }
+
+        .border-color-light-gray {
+            border-color: #333333 !important;
+        }
+
+        .hover-text-white:hover {
+            color: #ffffff !important;
+            transition: color 0.3s ease;
+        }
+
+        footer .btn-primary {
+            background-color: #00ff00;
+            border: none;
+            color: #000000;
+            transition: all 0.3s ease;
+        }
+
+        footer .btn-primary:hover {
+            background-color: #00cc00;
+        }
+
+        footer input::placeholder {
+            color: #808080 !important;
+        }
+
+        footer .form-control:focus {
+            border-color: #00ff00;
+            box-shadow: none;
+        }
+
+        footer ul li {
+            transition: transform 0.3s ease;
+        }
+
+        footer ul li:hover {
+            transform: translateX(5px);
+        }
+
+        .image-content img {
+            transition: transform 0.6s ease-in-out;
+        }
+
+        .image-content img.flip {
+            transform: rotateY(180deg);
+        }
+
+    </style>
+    
+    </head>
+    <body data-mobile-nav-style="classic" class="custom-cursor">
+       
+        <!-- start cursor -->
+        <div class="cursor-page-inner">
+            <div class="circle-cursor circle-cursor-inner"></div>
+            <div class="circle-cursor circle-cursor-outer"></div>
+        </div>
+        <!-- end cursor -->
+        <header> 
+            <nav class="navbar navbar-expand-lg header-transparent header-dark bg-transparent header-reverse glass-effect border-bottom border-color-transparent-white-light" data-header-hover="dark">
+                <div class="container-fluid">
+                    <!-- Logo Section -->
+                    <div class="d-flex align-items-center me-auto">
+                        
+                          <a href="index.html">  <img src="./images/matrix-logo-white@2x.png" alt="Matrix Logo" class="default-logo" style="height:40px; width: 120px; margin-left: 20px;">
+                          </a>
+                        
+                    </div>
+                            
+                    <!-- Navbar Toggle for Mobile -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+            
+                    <!-- Navbar Items -->
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="margin-left: 100px;">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <a href="index.html" class="inner-link nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="aboutus.html" class="inner-link nav-link" target="_blank">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="events.html" class="inner-link nav-link" target="_blank">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="wholeteam.html" class="inner-link nav-link" target="_blank">Our Team</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contactus.html" class="inner-link nav-link" target="_blank">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="alumni.html" class="inner-link nav-link" target="_blank">Alumni-Connect</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="navbar-brand me-2" href="https://www.scit.edu" target="_blank" style="max-width: 200px; padding-left: 20px;">
+                        <img src="images/Symbiosis Logo.png" alt="Symbiosis Logo" class="default-logo" style="height: 100%; width: 100%;">
+                    </a>
+                </div>
+            </nav>
+            <!-- end navigation -->
+        </header>
+        <!-- end header -->
+        
+        <!-- start section -->
+        <section id="home" class="cover-background pb-0">
+
+            <video autoplay muted loop class="bg-video">
+                <source src="images/bg4.mp4" type="video/mp4">
+            </video>
+
+            <div class="position-absolute left-minus-70px mt-2 d-none d-xl-inline-block" data-parallax-liquid="true" data-parallax-transition="2" data-parallax-position="top">
+                <img src="" alt="" data-bottom-top="transform: rotate(-30deg)" data-top-bottom="transform:rotate(10deg)">
+            </div>
+            <div class="position-absolute mt-10 right-80px xxl-right-0px d-none d-xl-inline-block" data-parallax-liquid="true" data-parallax-transition="2" data-parallax-position="bottom">
+                <img src="" alt="" data-bottom-top="transform: rotate(-60deg)" data-top-bottom="transform:rotate(60deg)">
+            </div>
+            <div class="position-absolute bottom-0 xl-bottom-120px left-0 ms-12 xxl-ms-5 mb-25 xxl-mb-30 d-none d-xl-inline-block" data-parallax-liquid="true" data-parallax-transition="2" data-parallax-position="bottom">
+                <img src="" alt="" data-bottom-top="transform: rotate(-30deg)" data-top-bottom="transform:rotate(60deg)">
+            </div>
+
+            <div class="container position-relative">
+                <div class="row pt-12 mb-14 xxl-pt-10 xl-pt-6 xxl-mb-10 sm-pt-70px xs-mb-35px">
+                    <div class="col text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <div class="fs-80 lg-fs-70 md-fs-60 fw-600 ls-minus-2px mb-25px text-white"><div class="highlight-separator z-index-1" data-shadow-animation="true" data-animation-delay="500">TEAM MATRIX<span><img src="images/demo-cryptocurrency-highlight-separator.svg" alt="" class="h-25px"></span></div></div>
+                        <p class="fs-20 fw-300 w-55 lg-w-70 md-w-100 mx-auto mb-0" style="color: #a2a2a2;">Team Matrix, SCIT's premier cybersecurity committee, is dedicated to building awareness, driving innovation, and empowering individuals in the field of information security. Join us in shaping a safer digital future through collaboration and cutting-edge initiatives!</p>
+                        <div class="d-flex align-items-center justify-content-center flex-wrap mt-40px xs-mt-30px" style="margin-left: 1em;">
+                            <a href="https://www.instagram.com/teammatrixscit?igsh=bmIxcWh2MXQ3MmZu&utm_source=qr" target="_blank" class="btn btn-extra-large btn-base-color btn-rounded d-inline-block me-30px xs-me-10px btn-box-shadow btn-switch-text sm-mt-10px sm-mb-10px section-link">
+                                <span>
+                                    <span class="btn-double-text text-black" data-text="Go Ahead">Follow us on Instagram</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+               
+                
+                    <div class="row justify-content-center g-0">
+                        <div class="col-md-auto col-sm-10 border-radius-100px pt-15px pb-15px ps-45px pe-45px md-ps-20px md-pe-20px border border-color-transparent-white-very-light fs-22 text-white text-md-start text-center">
+                            <a href="#" class="d-inline-block border-end sm-border-end-0 pe-40px me-40px sm-pe-0 sm-me-0 border-color-transparent-white-very-light text-white text-decoration-none tab-link active" data-tab="matrix">
+                                <span class="fw-700">MATRIX</span>
+                            </a>
+                            <a href="#" class="d-inline-block border-end sm-border-end-0 pe-40px me-40px sm-pe-0 sm-me-0 border-color-transparent-white-very-light text-white text-decoration-none tab-link" data-tab="isaca">
+                                <span class="fw-700">ISACA</span>
+                            </a>
+                            <a href="#" class="d-inline text-white text-decoration-none tab-link" data-tab="null">
+                                <span class="d-inline-block"><span class="fw-700">NULL</span></span>
+                            </a>
+                        </div>
+                    </div>
+
+                
+                    <!-- ABOUT SECTION START -->
+                <div id="about-content" class="container-fluid mt-5 text-white text-center fs-20">
+                    
+                    <!-- Matrix Section -->
+                    <div id="matrix" class="about-section active">
+                        <div class="row align-items-center justify-content-center p-3">
+                            <div class="col-lg-6 col-md-12 text-content mb-3 mb-lg-0" style="text-align: justify; display: flex; justify-content: flex-start; align-items: flex-start;">
+                                <div style="background-color: rgba(100, 100, 100, 0.2); width: 300%; padding: 10px 15px; border-radius: 10px; color: white; text-align: center;">
+                                    <h2 style="font-size: 1.5rem;">About Matrix</h2>
+                                    <p style="font-size: 1rem;">
+                                        Team Matrix was born from late-night discussions and a shared passion for cybersecurity. 
+                                        Founded by a group of security enthusiasts at SCIT, Pune.
+                                    </p>
+                                    <p style="font-size: 1rem;">
+                                        Guided by the values and principles of esteemed communities like ISACA, we aim to inspire confidence 
+                                        and enable innovation through technology. Our collaboration with Null, the Open Security Community, 
+                                        reflects our commitment to raising security awareness, advancing cutting-edge research, and creating 
+                                        a centralized knowledge platform for cybersecurity professionals and enthusiasts.
+                                    </p>
+                                    <p style="font-size: 1rem;">
+                                        Team Matrix has been recognized for its dedication, with notable accolades like being named the 
+                                        Cybersecurity Club of the Month by MCCIA in January 2025. Together, we continue to lead and inspire, 
+                                        working toward a secure and resilient digital future.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 col-md-12 image-content">
+                                <img src="images/matrix.jpg" alt="Team Matrix" class="img-fluid w-100 mb-3">
+                                <a href="aboutus.html" target="_blank" class="btn btn-extra-large btn-base-color btn-rounded d-inline-block me-30px xs-me-10px btn-box-shadow  sm-mt-10px sm-mb-10px section-link">
+                                    <span>
+                                        <span class="btn-double-text text-black">More About us</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ISACA Section -->
+                    <div id="isaca" name="isaca" class="about-section" style="display: none;">
+                        <div class="row align-items-center justify-content-center p-3">
+                            <div class="col-lg-6 col-md-12 text-content mb-3 mb-lg-0" style="text-align: left; display: flex; justify-content: flex-start; align-items: flex-start;">
+                                <div style="background-color: rgba(100, 100, 100, 0.2); width: 200%; padding: 10px 15px; border-radius: 10px; color: white; text-align: center;">
+                                    <h2 style="font-size: 1.5rem;">About ISACA</h2>
+                                    <p style="font-size: 1.0rem;">
+                                        Founded in 1969, ISACA is a global professional association focused on IT governance, risk management, and cybersecurity. 
+                                        With more than 140,000 members worldwide, ISACA empowers professionals by providing them with resources, certifications, 
+                                        and training to navigate the complexities of modern IT governance, cybersecurity, and risk management.
+                                    </p>
+                                    <p style="font-size: 1.0rem;">
+                                        ISACA offers industry-leading certifications like CISA, CISM, and CRISC, which have become globally recognized benchmarks 
+                                        for expertise in IT auditing, information security, and risk management. Through its dedicated chapters and events, 
+                                        ISACA fosters a collaborative community that inspires innovation, networking, and knowledge sharing.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-6 col-md-12 image-content">
+                                <img src="images\IMG-20240825-WA0267.jpg" alt="ISACA" class="img-fluid w-100 mb-3">
+                                <a href="aboutus.html" class="btn btn-extra-large btn-base-color btn-rounded d-inline-block me-30px xs-me-10px btn-box-shadow sm-mt-10px sm-mb-10px section-link">
+                                    <span>
+                                        <span class="btn-double-text text-black">More About us</span>
+                                    </span>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Null Section -->
+                    <div id="null" class="about-section" style="display: none;">
+                        <div class="row align-items-center justify-content-center p-3">
+                            <div class="col-lg-6 col-md-12 text-content mb-3 mb-lg-0" style="text-align: justify; display: flex; justify-content: flex-start; align-items: flex-start;">
+                                <div style="background-color: rgba(100, 100, 100, 0.2); width: 200%; padding: 10px 15px; border-radius: 10px; color: white; text-align: center;">
+                                    <h2 style = "font-size: 1.5rem;">About Null</h2>
+                                    <p style="font-size: 1.0rem;">Null is India's largest open security community, formed with the vision to create awareness about information security 
+                                        and provide a collaborative platform for individuals to learn, share, and grow together. 
+                                        With chapters spread across various cities, Null has become a pivotal community for security enthusiasts and professionals.
+                                    </p>
+                                    <p style="font-size: 1.0rem;">
+                                        Founded in 2007, Null's mission is to promote knowledge sharing, innovation, and skills development through hands-on workshops, 
+                                        meetups, and CTF (Capture The Flag) events. The community engages in critical discussions around security research, ethical hacking, 
+                                        and the latest cyber threats, making it one of the most influential security communities in India.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 image-content">
+                                <img src="images/null.jpg" alt="NULL" class="img-fluid w-100 mb-3">
+                                <a href="aboutus.html" class="btn btn-extra-large btn-base-color btn-rounded d-inline-block me-30px xs-me-10px btn-box-shadow sm-mt-10px sm-mb-10px section-link">
+                                    <span>
+                                        <span class="btn-double-text text-black">More About us</span>
+                                    </span>
+                                </a>
+                                
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                </div>
+            <!-- ABOUT SECTION END -->
+
+               <!-- WHAT SETS US APART -->
+                    <div class="container">
+                        <div class="row align-items-center justify-content-center">
+                            <!-- Image Column -->
+                            <div class="col-xl-7 col-lg-6 col-md-12 order-lg-1 order-1 md-mb-15px md-ps-70px sm-ps-40px" style="margin-left: -45px;" data-anime='{ "el": "childs", "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            <img src="images/IMG_7404.JPG" class="img-fluid rounded-3" style="border-radius: 15px;" data-bottom-top="transform: translateY(-50px)" data-top-bottom="transform: translateY(50px)" alt="Cybersecurity Image">
+                            </div>
+                       
+                            <!-- Content Column -->
+                            <div class="col-xl-5 col-lg-6 col-md-12 last-paragraph-no-margin order-lg-2 order-2" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                                <h3 class="fw-600 text-white w-90 xl-w-100 text-dark-gray fw-700 ls-minus-1px">What Sets Us Apart</h3>
+                                <p class="w-95 xl-w-100">We believe in the power of peer-to-peer learning and collaboration, offering hands-on experience with real-world security practices. Our team is recognized for its dedication, and we continue to lead the way in cybersecurity innovation.</p>
+                                <ul class="p-0 mb-20px mt-15px list-style-01">
+                                    <li class="border-color-transparent-white-light text-white d-flex align-items-center pt-20px pb-20px">
+                                        <div class="feature-box-icon feature-box-icon-rounded w-40px h-40px rounded-circle bg-dark me-20px text-center d-flex align-items-center justify-content-center flex-shrink-0"><i class="fa-solid fa-check fs-14 text-base-color"></i></div>Student-Driven: We believe in the power of peer-to-peer learning and collaboration.
+                                    </li>
+                                    <li class="text-white d-flex align-items-center pt-20px pb-20px">
+                                        <div class="feature-box-icon feature-box-icon-rounded w-40px h-40px rounded-circle bg-dark me-20px text-center d-flex align-items-center justify-content-center flex-shrink-0"><i class="fa-solid fa-check fs-14 text-base-color"></i></div>Hands-On Experience: Implement real-world security practices and develop practical skills.
+                                    </li>
+                                    <li class="text-white d-flex align-items-center pt-20px pb-20px">
+                                        <div class="feature-box-icon feature-box-icon-rounded w-40px h-40px rounded-circle bg-dark me-20px text-center d-flex align-items-center justify-content-center flex-shrink-0"><i class="fa-solid fa-check fs-14 text-base-color"></i></div>Industry Recognition: Proud to be named MCCIA's Cyber Security Club of the Month for January 2024.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+               
+                <!-- OUR EVENTS SECTION -->
+                <section id="features" class="cover-background">
+                    <div class="container">
+                        <div class="row text-center mb-3">
+                            <div class="col">
+                                <h3 class="fw-600 mb-10px text-white">Our Events</h3>
+                            </div>
+                        </div>
+                        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center" data-anime='{ "el": "childs", "translateY": [0, 0], "perspective": [1200,1200], "scale": [1.1, 1], "rotateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 200, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                            <!-- Cyberon Card -->
+                            <div class="col icon-with-text-style-04 transition-inner-all md-mb-30px">
+                                <a href="events.html#cyberon" style="text-decoration: none;">
+                                    <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px h-100 p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover overflow-hidden">
+                                        <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-110px h-110px rounded-circle mb-25px box-shadow-medium">
+                                            <img src="images/cyberon.png" alt="">
+                                        </div>
+                                        <div class="feature-box-content last-paragraph-no-margin">
+                                            <span class="d-inline-block text-white fw-600 fs-24 mb-10px">CYBERON</span>
+                                            <p class="text-light-gray fs-16 mb-0">A flagship event by Team Matrix held during Cyber Security Awareness Month, featuring expert panel discussions on human-centric cybersecurity and emerging cyber trends.</p>
+                                        </div>
+                                        <div class="feature-box-overlay bg-very-light-gray"></div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- DPW Card -->
+                            <div class="col icon-with-text-style-04 transition-inner-all md-mb-30px">
+                                <a href="events.html#DPW" style="text-decoration: none;">
+                                    <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px h-100 p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover overflow-hidden">
+                                        <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-110px h-110px rounded-circle mb-25px box-shadow-medium">
+                                            <img src="images/dpw.jpeg" alt="">
+                                        </div>
+                                        <div class="feature-box-content last-paragraph-no-margin">
+                                            <span class="d-inline-block text-white fw-600 fs-24 mb-10px">DPW</span>
+                                            <p class="text-light-gray fs-16 mb-0">Data Privacy Week - An event by Team Matrix featuring expert talks on data privacy trends and practices by industry leaders in cybersecurity and privacy.</p>
+                                        </div>
+                                        <div class="feature-box-overlay bg-very-light-gray"></div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <!-- CJD Card -->
+                            <div class="col icon-with-text-style-04 transition-inner-all">
+                                <a href="events.html#CJD" style="text-decoration: none;">
+                                    <div class="feature-box bg-gradient-gray-light-dark-transparent border-radius-10px h-100 p-16 lg-p-13 box-shadow-quadruple-large box-shadow-quadruple-large-hover overflow-hidden">
+                                        <div class="feature-box-icon feature-box-icon-rounded bg-light-gray w-110px h-110px rounded-circle mb-25px box-shadow-medium">
+                                            <img src="images/CJD logo.jpg" alt="">
+                                        </div>
+                                        <div class="feature-box-content last-paragraph-no-margin">
+                                            <span class="d-inline-block text-white fw-600 fs-24 mb-10px">CJD</span>
+                                            <p class="text-light-gray fs-16 mb-0">Cyber Jaagrukta Diwas - Awareness sessions on current cybersecurity threats and defense strategies.</p>
+                                        </div>
+                                        <div class="feature-box-overlay bg-very-light-gray"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+                </div>
+            </div>
+        
+       
+
+        <!-- MEET OUR TEAM SECTION -->
+        <section id="meet_team" class="cover-background overflow-visible" style="padding: 40px 20px; text-align: center;">
+            <!-- Heading -->
+            <div class="centered-container" style="margin-bottom: 30px;">
+                <p class="centered-text" style="font-size: 36px; font-weight: bold; color: white;">MEET OUR TEAM</p>
+            </div>
+
+            <!-- Team Cards -->
+            <div class="responsive-container-block outer-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 900px; margin: 0 auto;">
+        
+                <!-- Team Member Cards -->
+                <div class="card-container" style="width: 45%; min-width: 280px; text-align: center;">
+                    <a href="https://www.linkedin.com/in/anubhav-mathur-a3814b18a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                        <div class="card" style="background-color: white; box-shadow: 5px 5px 15px rgba(0, 128, 128, 0.3); border-radius: 15px; padding: 20px;">
+                            <div class="img-box" style="display: flex; justify-content: center;">
+                                <img src="images/seniors profile/Anubhav_Mathur_ITBM_D.JPG" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;">
+                            </div>
+                            <div class="card-content-box" style="margin-top: 15px;">
+                                <p style="font-size: 18px; font-weight: bolder; font-family: 'Courier New', Courier, monospace;">Anubhav Mathur</p>
+                                <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif; font-weight: bold; color: cadetblue; margin-top: -25px;">President</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        
+                <div class="card-container" style="width: 45%; min-width: 280px; text-align: center;">
+                    <a href="https://www.linkedin.com/in/krutikashetty?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " target="_blank">
+                        <div class="card" style="background-color: white; box-shadow: 5px 5px 15px rgba(0, 128, 128, 0.3); border-radius: 15px; padding: 20px;">
+                            <div class="img-box" style="display: flex; justify-content: center; ">
+                                <img src="images/seniors profile/Krutika_Shetty_ITBM_C.JPG" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;">
+                            </div>
+                            <div class="card-content-box" style="margin-top: 15px;">
+                                <p style="font-size: 18px; font-weight: bold; font-family: 'Courier New', Courier, monospace;">Krutika Shetty</p>
+                                <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif;  font-weight: bold; color: cadetblue; margin-top: -25px;">Vice President</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        
+                <div class="card-container" style="width: 45%; min-width: 280px; text-align: center;">
+                    <a href="https://www.linkedin.com/in/isha-chavan-81a444208?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " target="_blank">
+                        <div class="card" style="background-color: white; box-shadow: 5px 5px 15px rgba(0, 128, 128, 0.3); border-radius: 15px; padding: 20px;">
+                            <div class="img-box" style="display: flex; justify-content: center; ">
+                                <img src="images/seniors profile/Isha_Chavan_ITBM_D.JPG" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;">
+                            </div>
+                            <div class="card-content-box" style="margin-top: 15px;">
+                                <p style="font-size: 18px; font-weight: bold; font-family: 'Courier New', Courier, monospace;">Isha Chavan</p>
+                                <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif; font-weight: bold; color: cadetblue; margin-top: -25px;">Treasurer</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+        
+                <div class="card-container" style="width: 45%; min-width: 280px; text-align: center;">
+                    <a href="https://www.linkedin.com/in/sagarsharma1999?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app " target="_blank">
+                        <div class="card" style="background-color: white; box-shadow: 5px 5px 15px rgba(0, 128, 128, 0.3); border-radius: 15px; padding: 20px;">
+                            <div class="img-box" style="display: flex; justify-content: center; ">
+                                <img src="images/sagar.jpg" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%;">
+                            </div>
+                            <div class="card-content-box" style="margin-top: 15px;">
+                                <p style="font-size: 18px; font-weight: bold; font-family: 'Courier New', Courier, monospace;">Sagar Sharma</p>
+                                <p style="font-size: 20px; font-family: 'Times New Roman', Times, serif; font-weight: bold; color: cadetblue; margin-top: -25px;">Secretary</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <a href="wholeteam.html">
+                    <button class="btn btn-extra-large btn-base-color btn-rounded d-inline-block me-30px xs-me-10px btn-box-shadow sm-mt-10px sm-mb-10px section-link text-black">
+                        MEET THE WHOLE TEAM
+                    </button>
+                </a>
+            </div>
+        </section>
+        
+       
+        <!-- FOOTER START -->
+        <footer class="bg-dark pb-30px">
+            <div class="container">
+                <div class="row justify-content-center mb-4 md-mb-7 sm-mb-40px">
+                    <!-- Logo Column -->
+                    <div class="col-6 col-lg-2 col-sm-3 order-sm-1 md-mb-40px xs-mb-30px">
+                        <a href="#home" class="footer-logo d-inline-block inner-link">
+                            <img src="images/matrix-logo-white@2x.png" alt="Matrix Logo" style="max-width: 150px;">
+                        </a>
+                    </div>
+                    
+                    <!-- Quick Links -->
+                    <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
+                        <span class="fs-17 fw-600 d-block text-white mb-3">Quick Links</span>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="aboutus.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">About us</a></li>
+                            <li class="mb-2"><a href="wholeteam.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">Our Team</a></li>
+                            <li class="mb-2"><a href="events.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">Events</a></li>
+                            <li class="mb-2"><a href="alumni.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">Alumni-Connect</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Communities -->
+                    <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-4 order-lg-3">
+                        <span class="fs-17 fw-600 d-block text-white mb-3">Communities</span>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="aboutus.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">ISACA</a></li>
+                            <li class="mb-2"><a href="aboutus.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">NULL Community</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
+                        <span class="fs-17 fw-600 d-block text-white mb-3">Contact Us</span>
+                        <div class="text-light-gray">
+                            <p class="mb-2">SCIT, Pune</p>
+                            <a href="contactus.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">Mail us at: teammatrix@scit.edu</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer Bottom -->
+                <div class="row footer-bottom border-top border-color-light-gray pt-30px align-items-center">
+                    <div class="col-lg-9 text-center text-lg-start">
+                        <span class="text-light-gray fs-14 d-block lh-22">
+                            © 2024 Team Matrix. All rights reserved.
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER END -->
+
+
+    </section>
+
+
+    <!-- javascript libraries -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/vendors.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/news.js"></script>
+
+    <!-- FLIP ANIMATION -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabs = document.querySelectorAll(".tab-link");
+            const sections = document.querySelectorAll(".about-section");
+
+            tabs.forEach(tab => {
+                tab.addEventListener("click", function (event) {
+                    event.preventDefault();
+
+                    // Remove active class from all tabs
+                    tabs.forEach(t => t.classList.remove("active"));
+                    this.classList.add("active");
+
+                    // Get the target section
+                    let target = this.getAttribute("data-tab");
+
+                    // Hide all sections
+                    sections.forEach(section => {
+                        section.classList.remove("active");
+                        setTimeout(() => section.style.display = "none", 300);
+                    });
+
+                    // Show the target section with animation
+                    let activeSection = document.getElementById(target);
+                    setTimeout(() => {
+                        activeSection.style.display = "block";
+                        setTimeout(() => activeSection.classList.add("active"), 50);
+                        
+                        // Flip the image inside the new section
+                        let image = activeSection.querySelector("img");
+                        if (image) {
+                            image.classList.add("flip");
+                            setTimeout(() => {
+                                image.classList.remove("flip"); // Flip back after 0.6s
+                            }, 600);
+                        }
+                    }, 300);
+                });
+            });
+        });
+
+    </script>
+    </body>
+</html>

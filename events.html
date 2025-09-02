@@ -1,0 +1,905 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet"> 
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="shortcut icon" href="images/title icon 1.png">
+        <link rel="stylesheet" href="css/vendors.min.css"/>
+        <link rel="stylesheet" href="css/icon.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="css/teamcss.css"/> 
+        <link rel="stylesheet" href="css/events.css"/> 
+        <title>Our Events</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+html{
+        overflow-x: hidden;
+}
+body{
+        margin: 0;
+        font-family: Nunito, sans-serif;
+        overflow-x: hidden;
+
+}
+.responsive-container-block {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+}
+.photo {
+        width: 30%;
+        padding-top: 30%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .photo:hover {
+        transform: scale(1.1);
+    }
+
+    .tab-btn:hover {
+        background-color: #ffcccb;
+    }
+
+    .active {
+        background-color: #121212 !important;
+        color: lightblue !important;
+    }
+    .photo {
+        width: 30%;
+        padding-top: 30%;
+        background-size: cover;
+        background-position: center;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .photo:hover {
+        transform: scale(1.1);
+    }
+
+    .tab-btn:hover {
+        background-color: #ffcccb;
+    }
+
+    .active {
+        background-color: #121212 !important;
+        color: lightblue !important;
+    }
+
+    .tab-link {
+            transition: all 0.3s ease;
+        }
+
+        .tab-link.active {
+            color: #00ff00 !important;
+        }
+
+        .about-section {
+            transition: opacity 0.3s ease;
+        }
+
+        .bg-dark {
+            background-color: #1a1a1a !important;
+        }
+
+        .text-light-gray {
+            color: #b0b0b0 !important;
+        }
+
+        .border-color-light-gray {
+            border-color: #333333 !important;
+        }
+
+        .hover-text-white:hover {
+            color: #ffffff !important;
+            transition: color 0.3s ease;
+        }
+
+        footer .btn-primary {
+            background-color: #00ff00;
+            border: none;
+            color: #000000;
+            transition: all 0.3s ease;
+        }
+
+        footer .btn-primary:hover {
+            background-color: #00cc00;
+        }
+
+        footer input::placeholder {
+            color: #808080 !important;
+        }
+
+        footer .form-control:focus {
+            border-color: #00ff00;
+            box-shadow: none;
+        }
+
+        footer ul li {
+            transition: transform 0.3s ease;
+        }
+
+        footer ul li:hover {
+            transform: translateX(5px);
+        }
+
+        .image-content img {
+            transition: transform 0.6s ease-in-out;
+        }
+
+        .image-content img.flip {
+            transform: rotateY(180deg);
+        }
+        footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.footer-section .col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .footer-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section .col {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 0;
+    }
+
+    .footer-section .col {
+        min-width: 100%;
+        padding-bottom: 20px;
+    }
+}
+
+
+</style>
+        
+
+</head>
+    
+    <!-- start cursor -->
+    <div class="cursor-page-inner">
+        <div class="circle-cursor circle-cursor-inner"></div>
+        <div class="circle-cursor circle-cursor-outer"></div>
+    </div>
+
+
+    <!-- start header -->
+    <header> 
+        <nav class="navbar navbar-expand-lg header-transparent header-dark bg-transparent header-reverse glass-effect border-bottom border-color-transparent-white-light" data-header-hover="dark">
+            <div class="container-fluid" style="height: 74px; width: 430.4px7;">
+                <!-- Logo Section -->
+                <div class="d-flex align-items-center me-auto">
+                    <!-- <a class="navbar-brand me-2" href="index.html" style="max-width: 200px;">   -->
+                       <a href="index.html"> <img src="./images/matrix-logo-white@2x.png" alt="Matrix Logo" class="default-logo" style="height:40px; width: 120px; margin-left: 20px;"> </a>
+                    <!-- </a> -->
+                    
+                </div>
+                        
+                <!-- Navbar Toggle for Mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation" style="margin-right: 20px;">
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                    <span class="navbar-toggler-line"></span>
+                </button>
+
+                
+        
+                <!-- Navbar Items -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="margin-left: 100px;">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a href="index.html" class="inner-link nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="aboutus.html" class="inner-link nav-link" target="_blank">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="inner-link nav-link" style="opacity: 0.6;">Events</a>
+                        </li>                       
+                        <li class="nav-item">
+                            <a href="wholeteam.html" class="inner-link nav-link" target="_blank">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contactus.html" class="inner-link nav-link" target="_blank">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="alumni.html" class="inner-link nav-link" target="_blank">Alumni-Connect</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand me-2" href="https://www.scit.edu" target="_blank" style="max-width: 200px; padding-left: 20px;">
+                    <img src="images/Symbiosis Logo.png" alt="Symbiosis Logo" class="default-logo" style="height: 100%; width: 100%;">
+                </a>
+                
+            </div>
+        </nav>
+        
+        <!-- end navigation -->
+    </header>
+    <!-- end header -->
+
+
+    <!-- BODY START -->
+    <body data-mobile-nav-style="classic" class="custom-cursor">
+    <!-- Main Container -->
+    <div class="responsive-container-block">
+        <section id="home" class="cover-background pb-0">
+            <video autoplay muted loop class="bg-video">
+                <source src="images/bg4.mp4" type="video/mp4">
+              </video>
+            <div class="responsive-container">
+                <p class="matrix" style="font-family: Georgia, 'Times New Roman', Times, serif;">OUR EVENTS!</p>
+            </div>
+        
+         <!-- Cyberon Section -->
+        <section id="cyberon" style="padding: 40px; background-color: transparent; position: relative;z-index:2;"> 
+    <div class="event-section"; div id="Cyberon"; style="margin-bottom: 20px; margin-top: 2%;">
+            
+            <div class="row align-items-center p-3">
+                <div class="col-lg-6 col-md-12 text-content mb-3 mb-lg-0" style="text-align: justify; color: white;">
+                    <h2 class="event-header" style="color: #00cc00; text-align: center;" >CYBERON</h2>
+                    <p>Held annually in October, Cyberon is the flagship event of Team Matrix, designed to spread cybersecurity awareness through an exciting mix of activities. 
+                        Whether you're a tech enthusiast or just someone keen on digital safety, Cyberon has something for everyone.
+                    </p>
+                    <li>  • <span style="color: peachpuff;">Fun and Engaging Non-Tech Games </span> – Making cybersecurity education accessible and enjoyable.</li>
+                    <li>  • <span style="color: peachpuff;"> Technical Capture The Flag (CTF) Challenges </span> – Testing and enhancing cybersecurity skills through hands-on problem-solving.</li>
+                    <li>  • <span style="color: peachpuff;">Expert Panel Discussions </span> – Industry professionals from various domains share their insights on cybersecurity trends, challenges, and best practices.</li>
+                    <li>  • <span style="color: peachpuff;">Sponsorships </span> – Supported by leading companies and organizations, Cyberon provides an excellent platform for industry collaboration and networking opportunities.</li>
+                    <li>  • <span style="color: peachpuff;">Food Stalls </span> – A variety of food options to keep participants energized and make the event an enjoyable social experience.</li>
+                   
+                    <br><p> Cyberon is the perfect blend of learning and entertainment, ensuring that cybersecurity awareness reaches a wide audience in an interactive way.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 image-content">
+                    <img src="images/Cyberon Team.jpg" alt="Team Matrix" class="img-fluid w-100">
+                </div>
+            </div>
+        
+        
+<!-- Tab Buttons -->
+<div class="tab-buttons" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
+    <button class="tab-btn active" onclick="showTab('cyberon2024')" style="padding: 10px 20px; background-color: lightskyblue ; color: #121212; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+        CYBERON 2024
+    </button>
+    <button class="tab-btn" onclick="showTab('csam2023')" style="padding: 10px 20px; background-color: lightskyblue; color: #121212; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+        CSAM 2023
+    </button>
+</div>
+
+<!-- Tab Content -->
+<div id="cyberon2024" class="tab-content" style="display: block; margin-left: -20px;">
+    <h3 style="color: #00cc00; text-align: center;">CYBERON 2024</h3>
+
+    
+    <div class="row align-items-center p-3">
+        <div class="col-lg-6 col-md-12 text-content mb-3 mb-lg-0" style="text-align: justify; color: white;">
+            <p>CyberON is Team Matrix’s flagship event conducted during Cybersecurity Awareness Month, built around the theme “Ethos and Echoes: Securing the Intersection of Humanity and Technology.” The event aimed to raise awareness about ethical responsibility in the digital age and emphasized the importance of securing human interactions in a tech-driven world.</p>
+            <span style="color: cornsilk; font-size: 20px; font-weight: bold;">Speakers</span><p>A major highlight was the panel discussion on “Human-Centric Cybersecurity: The Last Line of Defence,” featuring industry experts <strong style="color: cadetblue;"> Advocate Rajas Pingle, Pankaj Chanekar, Rohitha Chowdary, Rushikesh Nandedkar, and Aalok Karnik, moderated by Sanyogeeta Rananaware. </strong> They shared insights on the role of human behavior and ethics in defending against modern cyber threats.</p>
+            <span style="color: cornsilk; font-size: 20px; font-weight: bold;">Challenges and Competitions</span><p>CyberON also hosted four engaging competitions:<br>
+                 • <span style="color: peachpuff;">Capture the Flag</span> – A high-energy cybersecurity puzzle-solving contest where individuals race against time to capture flags by cracking challenges.<br>
+                 • <span style="color: peachpuff;">Guardian of Cyber Galaxy</span> – A multi-activity team game combining maze navigation, phishing detection, DDoS defense, and final clue decoding.<br>
+                 • <span style="color: peachpuff;">Hackscape</span> – A thrilling team-based escape room with escalating point-based cybersecurity puzzles under time pressure.<br>
+                 • <span style="color: peachpuff;">Emocrypt</span> – A strategic campus-wide treasure hunt where teams solve riddles, gather emoji-based clues, and outwit opponents within a tight time frame.<br>
+                </p>
+                
+        
+            </div>
+        <div class="col-lg-6 col-md-12 image-content">
+            <img src="images/ethosechoes.jpg" alt="Team Matrix" class="img-fluid w-100"><br><br>
+            <img src="images/Panel discussion.jpg" alt="Team Matrix" class="img-fluid w-100">
+        </div>
+    </div>
+
+    <br>
+    <p style="color: blanchedalmond; text-align: center; font-size: 20px;">
+        Sneak peek into Cyberon 2024.
+    </p>
+    <div class="gallery-section">
+        <div class="gallery">
+            <a href="images/cyberon main.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 1">
+                <img src="images/cyberon main.jpg" alt="Cyberon 1">
+            </a>
+            <a href="images/cyber1.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 2">
+                <img src="images/cyber1.jpg" alt="Cyberon 2">
+            </a>
+            <a href="images/cyber3.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 3">
+                <img src="images/cyber3.jpg" alt="Cyberon 3">
+            </a>
+            <a href="images/cyber6.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 4">
+                <img src="images/cyber6.jpg" alt="Cyberon 4">
+            </a>
+            <a href="images/cyber2.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 5">
+                <img src="images/cyber2.jpg" alt="Cyberon 5">
+            </a>
+            <a href="images/cyber10.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 6">
+                <img src="images/cyber10.jpg" alt="Cyberon 6">
+            </a>
+            <a href="images/cyber8.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 6">
+                <img src="images/cyber8.jpg" alt="Cyberon 7">
+            </a>
+            <a href="images/cyber7.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 6">
+                <img src="images/cyber7.jpg" alt="Cyberon 8">
+            </a>
+            <a href="images/cyb1.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 6">
+                <img src="images/cyb1.jpg" alt="Cyberon 9">
+            </a>
+            <a href="images/cyb2.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 6">
+                <img src="images/cyb2.jpg" alt="Cyberon 10">
+            </a>
+            <a href="images/cyb3.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 6">
+                <img src="images/cyb3.jpg" alt="Cyberon 11">
+            </a>
+            <a href="images/cyb4.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 6">
+                <img src="images/cyb4.jpg" alt="Cyberon 12">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div id="csam2023" class="tab-content" style="display: none; margin-left: -20px;">
+    <h3 style="color: #00cc00; text-align: center;">CSAM 2023</h3>
+    <p style="color: blanchedalmond; text-align: center;">
+        Explore the moments captured in CSAM 2023.
+    </p>
+    <div class="gallery-section">
+        <div class="gallery">
+            <a href="images/CSAM Main.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 5">
+                <img src="images/CSAM Main.jpg" alt="CSAM Image">
+            </a>
+            <a href="images/CSAM1.JPG" data-lightbox="cyberon-gallery" data-title="Cyberon Image 6">
+                <img src="images/CSAM1.JPG" alt="CSAM Image">
+            </a>
+            <a href="images/CSAM3.JPG" data-lightbox="cyberon-gallery" data-title="Cyberon Image 7">
+                <img src="images/CSAM3.JPG" alt="CSAM Image">
+            </a>
+            <a href="images/CSAM2.JPG" data-lightbox="cyberon-gallery" data-title="Cyberon Image 8">
+                <img src="images/CSAM2.JPG" alt="CSAM Image">
+            </a>
+
+            <a href="images/CSAM23-5.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 5">
+                <img src="images/CSAM23-5.jpg" alt="CSAM Image">
+            </a>
+            <a href="images/CSAM23-6.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 6">
+                <img src="images/CSAM23-6.jpg" alt="CSAM Image">
+            </a>
+            <a href="images/CSAM23-7.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 7">
+                <img src="images/CSAM23-7.jpg" alt="CSAM Image">
+            </a>
+            <a href="images/CSAM23-8.jpg" data-lightbox="cyberon-gallery" data-title="Cyberon Image 8">
+                <img src="images/CSAM23-8.jpg" alt="CSAM Image">
+            </a>
+            
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+</section>
+      <!-- DPW Section -->
+        <section id="dpw" style="padding: 40px; background-color: transparent; position: relative;z-index:2;"> 
+            <div class="event-section"; div id="DPW"; style="margin-bottom: 50px; margin-top: 50px;">
+            <div class="row align-items-center p-3">
+                <div class="col-lg-6 col-md-12 text-content mb-3 mb-lg-0" style="text-align: justify; color: white;">
+                    <h2 class="event-header" style="color: #00cc00; text-align: center;" >DPW</h2>
+                    <p>With an increasing focus on data protection, Data Privacy Week (DPW) serves as an annual initiative to educate individuals and organizations 
+                        about the importance of data privacy. Each year, DPW explores a unique theme, delving into critical aspects of data protection.
+                    </p>
+                    <li>  • <span style="color: peachpuff;">Privacy Laws & Regulations</span> – Understanding global and national privacy frameworks.</li>
+                    <li>  • <span style="color: peachpuff;">Personal Data Protection</span> – Empowering individuals with knowledge of their digital rights.</li>
+                    <li>  • <span style="color: peachpuff;">Corporate Data Security </span> – Exploring how businesses handle and secure user data.</li>
+                    <li>  • <span style="color: peachpuff;">Data Ecosystem Awareness </span> – Highlighting the significance of data flow and its impact on privacy.</li>
+                    
+                    <br><p> Through engaging discussions, expert sessions, and awareness campaigns, DPW reinforces the importance of responsible data handling in an increasingly digital world.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 image-content">
+                    <img src="images/DPW Main.jpg" alt="Team Matrix" class="img-fluid w-100">
+                </div>
+            </div>
+
+
+
+        <!-- Tab Buttons -->
+<div class="tab-buttons" style="display: flex; justify-content: center; gap: 20px; margin-bottom: 30px;">
+    <button class="tab-btn active" onclick="showTab('dpw2025')" style="padding: 10px 20px; background-color: lightskyblue; color: #121212; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+        DPW 2025
+    </button>
+    <button class="tab-btn" onclick="showTab('dpw2024')" style="padding: 10px 20px; background-color: lightskyblue; color: #121212; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+        DPW 2024
+    </button>
+</div>      
+<!-- Tab Content -->
+<div id="dpw2024" class="tab-content" style="display: none;">
+    <h3 style="color: #00cc00; text-align: center;">DPW 2024</h3>
+    <p style="color: blanchedalmond; text-align: center;">
+        View highlights of the DPW 2024 event.
+    </p>
+    <div class="gallery-section" >
+        <div class="gallery">
+            <a href="images/DPW23-1.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 1">
+                <img src="images/DPW23-1.jpg" alt="DPW Image 1">
+            </a>
+             <a href="images/DPW23-2.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 2">
+                <img src="images/DPW23-2.jpg" alt="DPW Image 2">
+            </a>
+             <a href="images/DPW23-3.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 3">
+                <img src="images/DPW23-3.jpg" alt="DPW Image 3">
+            </a>
+             <a href="images/DPW23-4.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 4">
+                <img src="images/DPW23-4.jpg" alt="DPW Image 4">
+            </a>
+             <a href="images/DPW23-5.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 5">
+                <img src="images/DPW23-5.jpg" alt="DPW Image 5">
+            </a>
+             <a href="images/DPW23-6.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 6">
+                <img src="images/DPW23-6.jpg" alt="DPW Image 6">
+            </a>
+             <a href="images/DPW23-7.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 7">
+                <img src="images/DPW23-7.jpg" alt="DPW Image 7">
+            </a>
+             <a href="images/DPW23-8.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 8">
+                <img src="images/DPW23-8.jpg" alt="DPW Image 8">
+            </a>
+             <a href="images/DPW23-9.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 9">
+                <img src="images/DPW23-9.jpg" alt="DPW Image 9">
+            </a>
+             <a href="images/DPW23-10.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 10">
+                <img src="images/DPW23-10.jpg" alt="DPW Image 10">
+            </a>
+        </div>
+</div>
+</div>
+
+<div id="dpw2025" class="tab-content" style="display: block;">
+    <h3 style="color: #00cc00; text-align: center;">DPW 2025</h3>
+    <p style="color: blanchedalmond; text-align: center;">
+        Explore the moments captured in DPW 2025.
+    </p>
+      <div class="gallery-section">
+        <div class="gallery">
+            <a href="images/DPW25-14.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 14">
+                <img src="images/DPW25-14.jpg" alt="DPW Image 14">
+            </a>
+            <a href="images/DPW25-4.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 4">
+                <img src="images/DPW25-4.jpg" alt="DPW Image 4">
+            </a>
+            
+            <a href="images/DPW25-6.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 6">
+                <img src="images/DPW25-6.jpg" alt="DPW Image 6">
+            </a>
+             <a href="images/DPW25-7.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 7">
+                <img src="images/DPW25-7.jpg" alt="DPW Image 7">
+            </a>
+             <a href="images/DPW25-2.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 2">
+                <img src="images/DPW25-2.jpg" alt="DPW Image 2">
+            </a>
+            <a href="images/DPW25-3.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 3">
+                <img src="images/DPW25-3.jpg" alt="DPW Image 3">
+            </a>
+             
+             <a href="images/DPW25-5.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 5">
+                <img src="images/DPW25-5.jpg" alt="DPW Image 5">
+            </a>
+             
+             <a href="images/DPW25-8.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 8">
+                <img src="images/DPW25-8.jpg" alt="DPW Image 8">
+            </a>
+             <a href="images/DPW25-9.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 9">
+                <img src="images/DPW25-9.jpg" alt="DPW Image 9">
+            </a>
+             <a href="images/DPW25-10.jpg" data-lightbox="cyberon-gallery" data-title="DPW Image 10">
+                <img src="images/DPW25-10.jpg" alt="DPW Image 10">
+            </a>
+            
+
+        </div>
+</div>
+
+</section>
+
+
+        <!-- CJD Section -->
+        <section id="cjd" style="padding: 40px; background-color: transparent; position: relative;z-index:2; ">
+
+        <div class="event-section"; div id="CJD"; >
+
+            <div class="row align-items-center p-3">
+                <div class="col-lg-6 col-md-12 text-content mb-3 mb-lg-0" style="text-align: justify; color: white;">
+                    <h2 class="event-header" style="color: #00cc00; text-align: center;" >CJD</h2>
+                    <p>Cyber Jagrukta Diwas (CJD) is a unique and ongoing initiative led by the Team Matrix committee, aimed at promoting cybersecurity awareness 
+                        among various sections of society. Held on a monthly basis (subject to feasibility), this outreach program reflects our strong commitment to 
+                        creating a digitally safe environment through continuous education and engagement.
+                    </p>
+                    <p>
+                        Under this initiative, members of Team Matrix voluntarily visit different communities such as government schools, underprivileged neighborhoods, 
+                        IT companies, college cleaning staff, and secondary high school students, among others. The sessions are carefully tailored to suit the understanding 
+                        and needs of each group, making complex cyber concepts simple and relatable.
+                    </p>
+                    <p> 
+                        Our mission is to ensure that cyber awareness reaches every corner of society, especially those who may not have regular access to such information. 
+                        By initiating conversations and spreading awareness at the grassroots level, we hope to build a community that is cyber-aware, vigilant, and resilient in the digital age.
+                       <br> Cyber Jagrukta Diwas is not just an event—it is a movement towards a safer cyberspace, driven by the passion and responsibility of young cyber advocates.
+
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 image-content">
+                    <img src="images/CJD_4.jpg" alt="Team Matrix" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+
+            <div class="sessions">
+                
+                <!-- Session 1 -->
+                <div class="session-card">
+                    <div class="session-header">
+                        <h2>Bringing Cyber Awareness to the Workplace – AIR Pune Edition</h2>
+                        <p><strong style="color: cornsilk;">Date:</strong> 28th August, 2024</p>
+                        <p><strong style="color: cornsilk;">Location:</strong> All India Radio, Pune</p>
+                    </div>
+                    <div class="session-images" style="margin: 10px;">
+                        <img src="images/CJD_12.jpg" alt="CJD Image">
+                        <img src="images/CJD_13.jpg" alt="CJD Image">
+                        <img src="images/CJD_14.jpg" alt="CJD Image">
+                    </div>
+                    <div class="session-description">
+                        <p>Team Matrix conducted an informative cybersecurity awareness session at All India Radio, Pune. 
+                            The session was specially designed for the organization’s middle-aged employees, focusing on essential topics tailored 
+                            to their day-to-day digital interactions. Key areas covered included the basics of cybersecurity, the importance of strong 
+                            password management, regular software updates and patching, and awareness of recent cyber scams. Through real-life examples 
+                            and interactive discussions, the session aimed to empower participants with practical knowledge to safeguard their digital 
+                            presence and adopt safer online practices. The initiative was well received, highlighting the importance of spreading cyber 
+                            awareness across all age groups and professional domains.</p></div>
+                </div>
+
+
+
+
+                <!-- Session 2 -->
+                <div class="session-card">
+                    <div class="session-header">
+                        <h2>Empowering Young Minds!</h2>
+                        <p><strong style="color: cornsilk;">Date:</strong> 1st February, 2025</p>
+                        <p><strong style="color: cornsilk;">Location:</strong> Zilla Parishad High School, Pune</p>
+                    </div>
+                    <div class="session-images" style="margin: 10px;">
+                        <img src="images/CJD_1.jpg" alt="CJD Image 1">
+                        <img src="images/CJD_5.jpg" alt="CJD Image 2">
+                        <img src="images/CJD_2.jpg" alt="CJD Image 3">
+                    </div>
+                    <div class="session-description">
+                        <p>During the Cyber Jagrukta Diwas event held on 1st February 2025 at Jilha Parishad Public School, Pune, our team from Matrix 
+                            conducted an awareness session aimed at educating students from the 6th and 7th grades about the fundamentals of cybersecurity. 
+                            Around 170–180 students, along with a few faculty members, participated in the session. We focused on explaining the basic concepts 
+                            of cybersecurity and highlighted common cybercrimes that affect everyday individuals. Using informative charts and posters, we illustrated 
+                            various types of cyberattacks and shared practical safety tips on how students and their families can stay protected online. The session was 
+                            interactive and designed to build foundational knowledge and a sense of digital responsibility among the young audience.</p>
+                    </div>
+                </div>
+                
+                <!-- Session 3 -->
+                <div class="session-card">
+                    <div class="session-header">
+                        <h2>Cyber Awareness Drive at PCMC College, Pune</h2>
+                        <p><strong style="color: cornsilk;">Date:</strong> 25th February, 2025</p>
+                        <p><strong style="color: cornsilk;">Location:</strong> PCMC College, Pune</p>
+                    </div>
+                    <div class="session-images" style="margin: 10px;">
+                        <img src="images/CJD_7.jpg" alt="CJD Image 1">
+                        <img src="images/CJD_6.jpg" alt="CJD Image 2">
+                        <img src="images/CJD_8.jpg" alt="CJD Image 3">
+                    </div>
+                    <div class="session-description">
+                        <p>The Cyber Jagrukta Divas (CJD) training session was conducted for final and second-last year commerce students. 
+                            The session covered crucial insights on protecting oneself in the digital world, with special focus on concepts such as digital 
+                            arrest and safe online practices. A key part of the session involved an in-depth explanation of cyber crimes in the banking sector, 
+                            covering threats like insider attacks, outdated security systems, phishing, SIM swapping, and ATM jackpotting. Students were introduced to 
+                            real-life banking fraud cases, and preventive measures were discussed, including RBI guidelines, the IT Act 2000, and modern cybersecurity 
+                            standards like PCI-DSS.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Session 4 -->
+                <div class="session-card">
+                    <div class="session-header">
+                        <h2>Cyber Aware and Prepared: High School Edition</h2>
+                        <p><strong style="color: cornsilk;">Date:</strong> 25th February, 2025</p>
+                        <p><strong style="color: cornsilk;">Location:</strong> Alard Public School, Pune</p>
+                    </div>
+                    <div class="session-images" style="margin: 10px;">
+                        <img src="images/CJD_9.jpg" alt="CJD Image 1">
+                        <img src="images/CJD_10.jpg" alt="CJD Image 2">
+                        <img src="images/CJD_11.jpg" alt="CJD Image 3">
+                    </div>
+                    <div class="session-description">
+                        <p>During the Cyber Jagrookta Diwas event, Team Matrix conducted a cybersecurity awareness session for students of grades 10 and 12, 
+                            focusing on the importance of staying safe in the digital world. The session covered key topics such as identifying cyber threats 
+                            and scams, best practices for online safety, securing personal data and devices, and understanding phishing, malware, and social 
+                            engineering attacks. With the support of the school administration and faculty, the team engaged students through interactive 
+                            discussions and real-life examples to make the concepts more relatable. The initiative aimed to empower young minds with the knowledge
+                             and tools needed to navigate the online space responsibly and securely. </p>
+                    </div>
+                </div>
+            </div>
+
+            
+            </div>
+        
+
+        <div id="countdown-container" style="margin: auto; max-width: 500px;padding: 20px;background: rgba(0, 0, 0, 0.8);border: 2px solid greenyellow;border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);text-align: center;color: white;font-size: 24px;">
+        <p id="countdown-message" style="margin: 0;font-size: 18px;color:aqua;">
+            Time left for Cyberon!!
+        </p>
+        <p id="countdown-timer" style="font-size: 32px;font-weight: bold;margin-top: 10px;">
+        </p>
+    </div>
+ 
+    <!-- Counters Section -->
+    <div id="counters-container" style="margin: 40px auto; max-width: 800px;padding: 20px;background: rgba(0, 0, 0, 0.8);border: 2px solid greenyellow;border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);text-align: center;color: white;font-size: 24px;">
+
+    <p style="font-size: 18px; color: greenyellow; margin-bottom: 20px;">
+        Event Highlights
+    </p>
+    <div class="highlights" style="display: flex; justify-content: space-around; align-items: center;">
+        <!-- Counter for Events -->
+        <div style="text-align: center;">
+            <i class="fas fa-calendar-alt" style="font-size: 36px; color: greenyellow; margin-bottom: 10px;"></i>
+            <p style="font-size: 36px; font-weight: bold; margin: 0;" id="events-counter">0</p>
+            <p style="font-size: 18px;">Events</p>
+        </div>
+        <!-- Counter for Participants -->
+        <div style="text-align: center;">
+            <i class="fas fa-users" style="font-size: 36px; color: greenyellow; margin-bottom: 10px;"></i>
+            <p style="font-size: 36px; font-weight: bold; margin: 0;" id="participants-counter">0</p>
+            <p style="font-size: 18px;">Participants</p>
+        </div>
+        <!-- Counter for Speakers -->
+        <div style="text-align: center;">
+            <i class="fas fa-microphone-alt" style="font-size: 36px; color: greenyellow; margin-bottom: 10px;"></i>
+            <p style="font-size: 36px; font-weight: bold; margin: 0;" id="speakers-counter">0</p>
+            <p style="font-size: 18px;">Speakers</p>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+</section>
+
+
+<!-- start footer -->
+<footer class="pb-30px" style="background-color: #1a1a1a;">
+    <div class="container">
+        <div class="row justify-content-center mb-4 md-mb-7 sm-mb-40px">
+            <!-- Logo Column -->
+            <div class="col-6 col-lg-2 col-sm-3 order-sm-1 md-mb-40px xs-mb-30px">
+                <a href="#home" class="footer-logo d-inline-block inner-link">
+                    <img src="images/matrix-logo-white@2x.png" alt="Matrix Logo" style="max-width: 150px;">
+                </a>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
+                <span class="fs-17 fw-600 d-block text-white mb-3">Quick Links</span>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="aboutus.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">About us</a></li>
+                    <li class="mb-2"><a href="wholeteam.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">Our Team</a></li>
+                    <li class="mb-2"><a href="events.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">Events</a></li>
+                    <li class="mb-2"><a href="alumni.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">Alumni-Connect</a></li>
+                </ul>
+            </div>
+
+            <!-- Communities -->
+            <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-4 order-lg-3">
+                <span class="fs-17 fw-600 d-block text-white mb-3">Communities</span>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="aboutus.html" class="text-light-gray text-decoration-none hover-text-white">ISACA</a></li>
+                    <li class="mb-2"><a href="aboutus.html" class="text-light-gray text-decoration-none hover-text-white">NULL Community</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
+                <span class="fs-17 fw-600 d-block text-white mb-3">Contact Us</span>
+                <div class="text-light-gray">
+                    <p class="mb-2">SCIT, Pune</p>
+                    <a href="contactus.html" class="text-light-gray text-decoration-none hover-text-white">Mail us at: teammatrix@scit.edu</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="row footer-bottom border-top border-color-light-gray pt-30px align-items-center">
+            <div class="col-lg-9 text-center text-lg-start">
+                <span class="text-light-gray fs-14 d-block lh-22">
+                    © 2024 Team Matrix. All rights reserved.
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->    
+
+
+<!-- Tab Switching Script -->
+<script>
+    let currentTab = null; 
+
+function showTab(tabId) {
+const tab = document.getElementById(tabId); 
+const isVisible = tab.style.display === 'block'; 
+
+const tabs = document.querySelectorAll('.tab-content');
+tabs.forEach(tab => {
+    tab.style.display = 'none';
+});
+
+
+const buttons = document.querySelectorAll('.tab-btn');
+buttons.forEach(btn => {
+    btn.classList.remove('active');
+});
+
+// Toggle the clicked tab
+if (!isVisible) {
+    tab.style.display = 'block'; 
+    document.querySelector(`[onclick="showTab('${tabId}')"]`).classList.add('active'); 
+    currentTab = tabId; // Update the current active tab
+} else {
+    currentTab = null; 
+}
+}
+</script>
+
+
+<!-- Script for days counter -->
+<script>
+    //date for next event
+    const nextEventDate = new Date("2025-09-27T10:00:00"); 
+    
+    function updateCountdown() {
+        const now = new Date();
+        const timeDifference = nextEventDate - now;
+    
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    
+        
+        const countdownElement = document.getElementById("countdown-timer");
+        if (timeDifference > 0) {
+            countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        } else {
+            countdownElement.innerHTML = "The event has Live!!";
+            clearInterval(countdownInterval);
+        }
+    }
+    const countdownInterval = setInterval(updateCountdown, 1000);
+    updateCountdown(); 
+    </script>
+
+
+<!-- Scripts for counters -->
+<script>
+    // Counter configuration
+    const counters = [
+        { id: "events-counter", end: 40, suffix: "+" },
+        { id: "participants-counter", end: 3000, suffix: "+" },
+        { id: "speakers-counter", end: 60, suffix: "+" },
+    ];
+    function animateCounter(id, endValue, suffix) {
+        let startValue = 0;
+        const duration = 2000; 
+        const increment = endValue / (duration / 50); 
+
+        function updateCounter() {
+            startValue += increment;
+            if (startValue >= endValue) {
+                document.getElementById(id).innerHTML = `${Math.floor(endValue)}${suffix}`;
+                clearInterval(interval);
+            } else {
+                document.getElementById(id).innerHTML = `${Math.floor(startValue)}${suffix}`;
+            }
+        }
+
+        const interval = setInterval(updateCounter, 50); 
+    }   
+    counters.forEach(counter => {
+        animateCounter(counter.id, counter.end, counter.suffix);
+    });
+</script>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/vendors.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/news.js"></script>
+    
+</body>
+</html>

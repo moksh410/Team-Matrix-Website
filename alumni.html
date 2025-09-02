@@ -1,0 +1,185 @@
+<!doctype html>
+<html class="" lang="en">
+<head>
+    <title>Alumni Connect</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/title icon 1.png">
+    <link rel="stylesheet" href="css/news.css"/>
+    <link rel="stylesheet" href="css/icon.min.css"/>
+    <link rel="stylesheet" href="css/vendors.min.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="stylesheet" href="css/teamcss.css"/>
+    <link rel="stylesheet" href="css/alumni.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <style>
+      
+</style>
+</head>
+
+    <section id="home">
+      <video autoplay muted loop class="bg-video">
+        <source src="images/bg4.mp4" type="video/mp4">
+      </video>
+    <!-- start cursor -->
+    <div class="cursor-page-inner">
+        <div class="circle-cursor circle-cursor-inner"></div>
+        <div class="circle-cursor circle-cursor-outer"></div>
+    </div>
+
+    <header> 
+      <nav class="navbar navbar-expand-lg header-transparent header-dark bg-transparent header-reverse glass-effect border-bottom border-color-transparent-white-light" data-header-hover="dark">
+          <div class="container-fluid">
+              <!-- Logo Section -->
+              <div class="d-flex align-items-center me-auto">
+                  
+                    <a href="index.html">  <img src="./images/matrix-logo-white@2x.png" alt="Matrix Logo" class="default-logo" style="height:40px; width: 120px; margin-left: 20px;">
+                    </a>
+                  
+              </div>
+                      
+              <!-- Navbar Toggle for Mobile -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-line"></span>
+                  <span class="navbar-toggler-line"></span>
+                  <span class="navbar-toggler-line"></span>
+                  <span class="navbar-toggler-line"></span>
+              </button>
+      
+              <!-- Navbar Items -->
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="margin-left: 100px;">
+                  <ul class="navbar-nav text-center">
+                      <li class="nav-item">
+                          <a href="index.html" class="inner-link nav-link">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="aboutus.html" class="inner-link nav-link" target="_blank">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="events.html" class="inner-link nav-link" target="_blank">Events</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="wholeteam.html" class="inner-link nav-link" target="_blank">Our Team</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="contactus.html" class="inner-link nav-link" target="_blank">Contact Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="alumni.html" class="inner-link nav-link">Alumni-Connect</a>
+                      </li>
+                  </ul>
+              </div>
+              <a class="navbar-brand me-2" href="https://www.scit.edu" target="_blank" style="max-width: 200px; padding-left: 20px;">
+                  <img src="images/Symbiosis Logo.png" alt="Symbiosis Logo" class="default-logo" style="height: 100%; width: 100%;">
+              </a>
+          </div>
+      </nav>
+      
+      <!-- end navigation -->
+  </header>
+  <!-- end header -->
+
+
+<!-- BODY START -->
+<body data-mobile-nav-style="classic" class="custom-cursor">
+      <!-- start section -->
+      <section id="application" class="cover-background overflow-visible md-pb-30px">
+        <div class="container">
+                <div class="row justify-content-center text-center mb-5">
+                    <div class="col-lg-8">
+                        <span class="text-white fw-600 mb-15px text-uppercase d-inline-block fs-14 ls-1px border-bottom border-color-transparent-white-very-light">Stay in Touch!</span>
+                        <h3 class="fw-600 ls-minus-2px text-white mb-15px">Team Matrix Alumni Connect</h3>
+                        <p class="text-white">Want to stay in touch with the committee or fellow members? Join our Alumni Network to receive updates on upcoming events, mentorship opportunities, and community initiatives.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-container">
+                    <p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 30px; color: #7bc47f;">Select Batch Year</p>
+                    <select id="batchSelect" onchange="filterTable()">
+                      <option value="">-- Choose a Batch Year --</option>
+                      <option value="2023-25" style="color: black;">2023-25</option>
+                      <option value="2022-24" style="color: black;">2022-24</option>
+                    </select>
+                </div>
+
+                    <table id="alumniTable" style="display:none;">
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Position</th>
+                          <th>LinkedIn</th>
+                        </tr>
+                      </thead>
+                      <tbody id="alumniBody">
+                        <!-- Dynamic rows will appear here -->
+                      </tbody>
+                    </table>
+                <div id="noData" style="display: none;">No alumni data available for this batch.</div>
+        </div>
+      </section>
+  </section> 
+    <!-- end section -->
+    
+     <!-- FOOTER START -->
+     <footer class="pb-30px" style="background-color: #1a1a1a;">
+      <div class="container">
+          <div class="row justify-content-center mb-4 md-mb-7 sm-mb-40px">
+              <!-- Logo Column -->
+              <div class="col-6 col-lg-2 col-sm-3 order-sm-1 md-mb-40px xs-mb-30px">
+                  <a href="#home" class="footer-logo d-inline-block inner-link">
+                      <img src="images/matrix-logo-white@2x.png" alt="Matrix Logo" style="max-width: 150px;">
+                  </a>
+              </div>
+              
+              <!-- Quick Links -->
+              <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
+                  <span class="fs-17 fw-600 d-block text-white mb-3">Quick Links</span>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="aboutus.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">About us</a></li>
+                      <li class="mb-2"><a href="wholeteam.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">Our Team</a></li>
+                      <li class="mb-2"><a href="events.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">Events</a></li>
+                      <li class="mb-2"><a href="alumni.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">Alumni-Connect</a></li>
+                  </ul>
+              </div>
+
+              <!-- Communities -->
+              <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-4 order-lg-3">
+                  <span class="fs-17 fw-600 d-block text-white mb-3">Communities</span>
+                  <ul class="list-unstyled">
+                      <li class="mb-2"><a href="aboutus.html" class="text-light-gray text-decoration-none hover-text-white">ISACA</a></li>
+                      <li class="mb-2"><a href="aboutus.html" class="text-light-gray text-decoration-none hover-text-white">NULL Community</a></li>
+                  </ul>
+              </div>
+
+              <!-- Contact Info -->
+              <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
+                  <span class="fs-17 fw-600 d-block text-white mb-3">Contact Us</span>
+                  <div class="text-light-gray">
+                      <p class="mb-2">SCIT, Pune</p>
+                      <a href="contactus.html" class="text-light-gray text-decoration-none hover-text-white">Mail us at: teammatrix@scit.edu</a>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Footer Bottom -->
+          <div class="row footer-bottom border-top border-color-light-gray pt-30px align-items-center">
+              <div class="col-lg-9 text-center text-lg-start">
+                  <span class="text-light-gray fs-14 d-block lh-22">
+                      © 2024 Team Matrix. All rights reserved.
+                  </span>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- FOOTER END -->
+   
+   
+<script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/vendors.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/alumni.js"></script>
+</body>
+</html>
