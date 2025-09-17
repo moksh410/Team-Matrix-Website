@@ -1,0 +1,279 @@
+.countdown-strip-link:hover {
+    filter: brightness(1.08);
+    box-shadow: 0 0 16px #97e14d44, 0 0 24px #164e6344;
+    transition: filter 0.2s, box-shadow 0.2s;
+}
+/* GLOBAL STYLES */
+/* Hide event-subtitle-mobile by default */
+.event-subtitle-mobile {
+    display: none !important;
+}
+.countdown-strip-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+#cyberon-countdown-strip {
+    width: 100%;
+    background: linear-gradient(90deg, #164e63 0%, #97e14d 100%);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    border-top: 3px solid #97e14d;
+    box-shadow: 0 -4px 16px #97e14d44, 0 0 24px #164e6344;
+    backdrop-filter: blur(6px);
+    animation: countdown-pop 0.7s cubic-bezier(.68,-0.55,.27,1.55);
+    padding: 0;
+}
+
+#cyberon-countdown-strip .countdown-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    gap: 24px;
+}
+
+#cyberon-countdown-strip .timer-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+#cyberon-countdown-strip .timer-unit {
+    background: #97e14d;
+    color: #164e63;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin: 0 2px;
+    box-shadow: 0 2px 8px #97e14d44;
+    min-width: 82px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cyberon-countdown-strip .timer-label {
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-shadow: 0 1px 4px #164e6344;
+    line-height: 1.5;
+}
+
+#cyberon-countdown-strip .cta-btn {
+    background: #164e63;
+    color: #97e14d;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 32px;
+    margin-left: 16px;
+    box-shadow: 0 2px 8px #97e14d44;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+#cyberon-countdown-strip .cta-btn:hover {
+    background: #97e14d;
+    color: #164e63;
+}
+
+@keyframes countdown-pop {
+    0% { transform: translateY(100%) scale(0.95); opacity: 0; }
+    70% { transform: translateY(-10%) scale(1.05); opacity: 1; }
+    100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+/* DESKTOP STYLES */
+@media (min-width: 769px) {
+    #cyberon-countdown-strip .timer-unit span[id^="cyberon-"] {
+        font-size: 1.7rem;
+        font-weight: 900;
+        letter-spacing: 2px;
+        color: #164e63;
+        line-height: 0.7;
+    }
+    #cyberon-countdown-strip .countdown-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    #cyberon-countdown-strip .event-title-col {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        min-width: 170px;
+        margin-right: 8px;
+        gap: 8px;
+    }
+    #cyberon-countdown-strip .event-title-main {
+    color: #bfff00;
+    font-size: 1.35rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-shadow: 0 2px 8px #164e6344, 0 0 2px #164e63;
+    }
+    #cyberon-countdown-strip .event-title-year {
+        color: #fff;
+        font-size: 1.15rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1.1;
+    }
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+    .blinking-text {
+        color: #fff;
+        animation: blink 1.5s infinite;
+        text-decoration: underline;
+    }
+
+    @keyframes blink{
+        0%{opacity: 0;}
+        25%{opacity: .25;}
+        50%{opacity: .5;}
+        75%{opacity: .75;}
+        100%{opacity: 1;}
+    }
+
+    .event-subtitle-mobile {
+        display: block !important;
+    }
+    .countdown-strip-link {
+        cursor: pointer;
+    }
+    #cyberon-countdown-strip .cta-btn {
+        display: none !important;
+    }
+    #cyberon-countdown-strip {
+        padding: 10px 0 8px 0 !important;
+        min-height: 44px;
+        font-size: 1rem;
+    }
+    #cyberon-countdown-strip .countdown-content {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 2px;
+        max-width: 98vw;
+        width: 100%;
+        align-items: center;
+    }
+    #cyberon-countdown-strip .countdown-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+        max-width: 98vw;
+        padding: 0;
+    }
+    #cyberon-countdown-strip .event-title-col {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 4px;
+        gap: 6px;
+    }
+    #cyberon-countdown-strip .event-title-main {
+        color: #00ff44;
+        font-size: 1.1rem;
+        font-weight: 800;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        line-height: 1.1;
+        text-shadow: 0 1px 4px #164e6344;
+    }
+    #cyberon-countdown-strip .event-title-year {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1.1;
+        text-shadow: 0 1px 4px #164e6344;
+    }
+    #cyberon-countdown-strip .timer-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 10px;
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+    #cyberon-countdown-strip .timer-unit {
+        background: #97e14d;
+        color: #164e63;
+        border-radius: 8px;
+        min-width: 48px;
+        height: 48px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 8px #97e14d44;
+        font-size: 1.1rem;
+        font-weight: 900;
+        padding: 0;
+    }
+    #cyberon-countdown-strip .timer-unit span[id^="cyberon-"] {
+        font-size: 1.2rem;
+        font-weight: 900;
+        line-height: 2.3;
+        color: #164e63;
+        margin-bottom: 0;
+    }
+    #cyberon-countdown-strip .timer-label {
+        display: block !important;
+        font-size: 0.7rem;
+        color: #164e63;
+        font-weight: 600;
+        margin-top: 2px;
+        line-height: 1.1;
+        text-align: center;
+    }
+    #cyberon-countdown-strip .cta-btn {
+        display: none;
+    }
+    #cyberon-countdown-strip .cta-btn svg {
+        width: 22px;
+        height: 22px;
+        display: block;
+        fill: #164e63;
+    }
+
+    #cyberon-countdown-strip .timer-unit span[id^="cyberon-"] {
+    line-height: 1;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+}
+
+.hidden {
+    display: none !important;
+}
