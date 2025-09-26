@@ -42,7 +42,7 @@ function toUnstop(link) {
 
 // when last-slide is reached, show a button to scroll to top
 const lastSlide = document.getElementById('last-slide');
-const scrollFooterBtn = document.getElementById('scroll-footer-btn');
+const scrollFooterBtn = document.getElementById('footer-arrow');
 scrollFooterBtn.style.display = 'block'; // hide initially
 
 const observer = new IntersectionObserver((entries) => {
@@ -56,3 +56,10 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 
 observer.observe(lastSlide);
+
+// redirect to the url from data-backlink attribute in new page
+function toBack(link) {
+    if (link) {
+        window.open(link, '_blank');
+    }
+}

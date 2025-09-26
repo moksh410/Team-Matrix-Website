@@ -31,25 +31,18 @@
           </div> <!-- banner-top-logos end -->
          
           <div class="hero-section flex flex-col flex-nowrap items-center justify-center h-[90%] w-full text-white relative">
-            <div id="register-btn" class="register-pill bg-lime-500 text-black px-4 py-2 rounded-full text-sm font-semibold shadow-md animate-bounce cursor-pointer" style="margin-top: 50px;">Registrations Open</div>
+            <div id="register-btn" class="register-pill bg-lime-500 text-black px-4 py-2 rounded-full text-sm font-semibold shadow-md animate-bounce cursor-pointer mt-4">Registrations Open</div>
             <div class="hero-other-text text-lg font-medium text-gray-300 italic tracking-wide mb-2">Team Matrix presents</div>
             <div class="text-9xl text-center mb-2 font-extrabold tracking-wide drop-shadow-lg text-lime-600">CYBERON '25</div>
             <div class="hero-other-text text-lg font-medium text-gray-300 italic tracking-wide mb-4">The flagship techno-cultural fest at SCIT</div>
             <img src="images/cyb25/Threads_of_trust.png" class="w-80 h-80 mx-auto p-8 rounded-full shadow-lg" alt="Threads of Trust">
             <div class="hero-other-text text-xl font-semibold text-lime-400 italic tracking-wide mb-4 drop-shadow-md">Intertwining the layers of security</div>
             <div class="text-lg font-medium tracking-wide">September 27, 2025</div>
-            <div class="absolute bottom-4 animate-pulse w-full">
-                <button id="scroll-btn" style="background: none; border: none; cursor: pointer; width: 100%;">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline-block ml-1 animate-bounce w-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                </button>
-            </div>
           </div>
 
       </div> <!-- banner main end -->
   </div>
-  <div class="banner-content flex flex-row w-full h-screen overflow-auto glassback">
+  <div class="banner-content flex flex-row w-full h-screen overflow-hidden glassback">
     <div class="banner-display w-3/5 -skew-x-12 h-full flex flex-col flex-nowrap ">
       <div class="flex flex-col flex-nowrap h-full w-full">
         <div class="banner-display-content flex flex-col items-center justify-center h-full p-8">
@@ -70,7 +63,7 @@
     <div class="event-group glassback overflow-hidden -skew-x-12  w-2/5 h-full  flex flex-col flex-nowrap">
         <!-- event-column -->
         <div class="event-column flex place-content-center h-full w-full">
-          <div class="event-banner  w-full flex flex-col place-content-center items-center" data-event="7th Sense" data-event-desc="Step into the ultimate battleground of wit, logic, and cybersecurity acumen! 7th Sense is a competition of Cyberon ’25, designed to challenge your analytical skills, problem-solving mindset, and quick decision-making under pressure.<br><br>From cracking complex puzzles to navigating real-world security scenarios, every round pushes you to think deeper and act smarter. It’s not just about speed — it’s about foresight, strategy, and the ability to trust your instincts." data-event-team="4" onclick="toUnstop('https://unstop.com/competitions/7th-sense-cyberon-2025-symbiosis-center-for-information-technology-scit-pune-1557288')">
+          <div class="event-banner w-full flex flex-col place-content-center items-center" data-event="7th Sense" data-event-desc="Step into the ultimate battleground of wit, logic, and cybersecurity acumen! 7th Sense is a competition of Cyberon ’25, designed to challenge your analytical skills, problem-solving mindset, and quick decision-making under pressure.<br><br>From cracking complex puzzles to navigating real-world security scenarios, every round pushes you to think deeper and act smarter. It’s not just about speed — it’s about foresight, strategy, and the ability to trust your instincts." data-event-team="4" onclick="toUnstop('https://unstop.com/competitions/7th-sense-cyberon-2025-symbiosis-center-for-information-technology-scit-pune-1557288')">
             <div class="neon-dot neon-dot-move" ></div>
             <img src="images/cyb25/7thsense.png" alt="Event 1" class="w-40 h-40 mb-2 skew-x-12 event-banner-icon" style="object-fit:contain;">
           </div>
@@ -90,6 +83,130 @@
         </div>
     </div> <!-- event Group end -->
   </div>
+  <!-- sponsors -->
+  <div class="sponsor-section flex flex-col w-full h-screen overflow-hidden">
+    <div class="sponsor-heading text-5xl text-center font-extrabold tracking-wide mb-2 drop-shadow-lg text-lime-600 mt-4">OUR SPONSORS</div>
+    <div class="title-sponsor flex items-center justify-center w-full h-3/5 mx-auto">
+      <div class="title-sponsor cursor-pointer flex items-center justify-center sm:w-1/2 md:w-2/3 *:mx-2 border-b mx-4 border-lime-400  hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_15px_#4ade80,0_0_30px_#4ade80] transition-shadow duration-300 ease-in-out glassback" data-backlink="https://www.intertek.com/" onclick="toBack(this.dataset.backlink)">
+        <img src="images/cyb25/Sponsor Logos/Title Sponsor Logo.png" alt="Title Sponsor Logo" class="sm:w-80 md:w-9/11 mx-auto">
+        <div class="text-2xl font-bold text-lime-400">
+          TITLE SPONSOR
+        </div>
+      </div>
+    </div>
+
+    <!-- Conveyor Belt for Sponsors -->
+    <section id="sponsor-conveyor" class="glassback py-8">
+      <h2 class="text-3xl font-bold text-center text-lime-500 mb-3">OTHER SPONSORS</h2>
+      <div class="overflow-x-hidden relative h-[200px]">
+        <div id="conveyor-belt" class="flex space-x-8 mt-4 animate-marquee whitespace-nowrap hover:pause-marquee *:rounded-xl *:border *:border-lime-400 *:bg-gray-800">
+
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/ctf7.official?igsh=YzlsM3lpdnlmMm82">
+            <img src="images/cyb25/Sponsor Logos/CTF7.png" alt="" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/hotel.maharashtra.kesari?igsh=ejQxb202Y285ZzYy">
+            <img src="images/cyb25/Sponsor Logos/Maharastra kesari.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/hotel.maharashtra.kesari?igsh=ejQxb202Y285ZzYy">
+            <img src="images/cyb25/Sponsor Logos/amul.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/hotel.maharashtra.kesari?igsh=ejQxb202Y285ZzYy">
+            <img src="images/cyb25/Sponsor Logos/2oh.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/krhospitality?igsh=bDdpcDFsYnMyZ3Jz">
+            <img src="images/cyb25/Sponsor Logos/dj_kunal.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/krhospitality?igsh=bDdpcDFsYnMyZ3Jz">
+            <img src="images/cyb25/Sponsor Logos/KR Hospitality.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/krhospitality?igsh=bDdpcDFsYnMyZ3Jz">
+            <img src="images/cyb25/Sponsor Logos/graffiti.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/krhospitality?igsh=bDdpcDFsYnMyZ3Jz">
+            <img src="images/cyb25/Sponsor Logos/herody.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/krhospitality?igsh=bDdpcDFsYnMyZ3Jz">
+            <img src="images/cyb25/Sponsor Logos/media_mentor.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/krhospitality?igsh=bDdpcDFsYnMyZ3Jz">
+            <img src="images/cyb25/Sponsor Logos/craftbiz.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="http://Www.bafnajewellers.co.in">
+            <img src="images/cyb25/Sponsor Logos/Bafna.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/campustimes.pune?utm_source=ig_web_button_share_sheet&igsh=MTNvNWt0bDAyYmhneg==">
+            <img src="images/cyb25/Sponsor Logos/Campus Times Pune.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/getmyfest?utm_source=ig_web_button_share_sheet&igsh=MW50M2k3dmNrNzI0cQ==">
+            <img src="images/cyb25/Sponsor Logos/Get My Fest Logo.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/fitness_element_?utm_source=ig_web_button_share_sheet&igsh=MWwzeTR3NzF5dHAxOA==">
+            <img src="images/cyb25/Sponsor Logos/GYM.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/lapinozpizzaindia/">
+            <img src="images/cyb25/Sponsor Logos/La Pinoz.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/MP Sons enterprises.png">
+            <img src="images/cyb25/Sponsor Logos/MP Sons enterprises.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://murthys.com/">
+            <img src="images/cyb25/Sponsor Logos/Murthy.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/neo_cafe0509?igsh=MmN4Z2R3N3hudmQy">
+            <img src="images/cyb25/Sponsor Logos/Neo Cafe.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2 bg-slate-300">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/palvit_photobooth/">
+            <img src="images/cyb25/Sponsor Logos/PalvitPhotobooth1.Logo.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/theparaiso.hinjawadi?igsh=MWk0Ymg2dmtwcDgzbw==">
+            <img src="images/cyb25/Sponsor Logos/Paraiso.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/qelica_mouthspray/">
+            <img src="images/cyb25/Sponsor Logos/qelica- white Logo.PNG" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/rain_honey_india?utm_source=ig_web_button_share_sheet&igsh=MzU2cDRuOWhoOHg5">
+            <img src="images/cyb25/Sponsor Logos/Rain & Honey.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/shearxperts?utm_source=ig_web_button_share_sheet&igsh=MzU2cDRuOWhoOHg5">
+            <img src="images/cyb25/Sponsor Logos/shear Experts.png" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/simpli.learn?utm_source=ig_web_button_share_sheet&igsh=MzU2cDRuOWhoOHg5">
+            <img src="images/cyb25/Sponsor Logos/SimpliLearn.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)">
+            <img src="images/cyb25/Sponsor Logos/Swami cafe.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/gurukrupa_budhanibrothers?utm_source=ig_web_button_share_sheet&igsh=MWhnaTBlMnlzZ3ZnaQ==">
+            <img src="images/cyb25/Sponsor Logos/Wafer Partner.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/birdvalleyhinjewadi?igsh=eGp4MjdzbXdrdnNq">
+            <img src="images/cyb25/Sponsor Logos/WhatsApp Image 2025-09-20 at 13.44.20_a852ac70.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]""  onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/og_deals_/">
+            <img src="images/cyb25/Sponsor Logos/OG Deals.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)">
+            <img src="images/cyb25/Sponsor Logos/blossom_heaven_nursery.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)">
+            <img src="images/cyb25/Sponsor Logos/rel-digital.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/matrix_gaming_zone?utm_source=ig_web_button_share_sheet&igsh=MXhhb2NlMXdpMnl3Mw==">
+            <img src="images/cyb25/Sponsor Logos/matrix_gaming.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/7eleven.india?igsh=MTVlMWJvNjR2Z25h">
+            <img src="images/cyb25/Sponsor Logos/7-eleven.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <div class="conveyor-sponsor-logo cursor-pointer w-[180px] h-[150px] rounded-md p-1 flex flex-col items-center justify-center mx-4 flex-none opacity-80 hover:opacity-100 transition-all duration-300 ease-in-out hover:shadow-[0_0_2px_#4ade80,inset_0_0_2px_#4ade80,0_0_5px_#4ade80,0_0_5px_#4ade80,0_0_7px_#4ade80]" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.truscholar.io/">
+            <img src="images/cyb25/Sponsor Logos/truScholar.jpg" alt="Sponsor Logo" class="object-contain w-full h-full p-2">
+          </div>
+          <!-- Duplicate content starts here -->
+          
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- sponsors end -->
 </div>
 
 <!-- Fixed Header Section for Mobile -->
@@ -133,7 +250,7 @@
       <div class="text-sm text-gray-200 text-center leading-relaxed justify">The “threads of trust” are the interconnected layers or dimensions of trust that together create a secure environment. Think of them like woven threads in a strong fabric <br><br><span class="text-md italic">if one weakens, the whole fabric is at risk.</span></div>
     </div>
   </section>
-  <section id="last-slide" class="carousel-slide">
+  <section class="carousel-slide">
     <div class="text-center">
       <a href="https://unstop.com/competitions/capture-the-flag-cyberon-2025-symbiosis-center-for-information-technology-scit-pune-1557292"><img src="images/cyb25/ctf.png" class="w-80 h-80 mb-4 mx-auto p-4 rounded-full shadow-lg" alt="Capture The Flag"></a>
       <div class="event-heading text-2xl text-lime-400 font-extrabold tracking-wide mb-2">Capture The Flag</div>
@@ -193,16 +310,169 @@ Vault.
     </div>
   </section>
   
+  <section class="carousel-slide">
+    <div class="text-center">
+      
+      <div class="text-sm text-gray-200 text-center leading-relaxed all-sponsors-logo flex flex-col items-center justify-center flex-wrap mx-auto">
+        <div class="relative flex flex-col items-center">
+          <img src="images/cyb25/Sponsor Logos/Title Sponsor Logo.png" alt="Title Sponsor Logo" class="object-contain w-64">
+          <div class="absolute inset-0 flex items-start justify-center  bg-black bg-opacity-0 top-0 mt-10">
+            <div class="text-xl font-bold text-lime-400 text-center">TITLE SPONSOR</div>
+          </div>
+        </div>
+
+        <div class="text-lg font-bold text-lime-400 text-center">
+          OTHER SPONSORS
+        </div>
+        <div class="flex flex-row justify-center items-center flex-wrap mx-auto *:rounded-xl *:border *:border-lime-400 *:p-2 *:m-2">
+          <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/7eleven.india?igsh=MTVlMWJvNjR2Z25h">
+        <img src="images/cyb25/Sponsor Logos/2oh.png" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block">
+        <img src="images/cyb25/Sponsor Logos/WhatsApp Image 2025-09-20 at 13.44.20_a852ac70.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block">
+        <img src="images/cyb25/Sponsor Logos/rel-digital.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/theparaiso.hinjawadi?igsh=MWk0Ymg2dmtwcDgzbw==">
+        <img src="images/cyb25/Sponsor Logos/Paraiso.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/theparaiso.hinjawadi?igsh=MWk0Ymg2dmtwcDgzbw==">
+        <img src="images/cyb25/Sponsor Logos/trends.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/ctf7.official?igsh=YzlsM3lpdnlmMm82">
+            <img src="images/cyb25/Sponsor Logos/CTF7.png" alt="Sponsor Logo" class="object-contain w-full h-full">
+          </div>
+    </div>
+  </section>
+
+  <section class="carousel-slide">
+    <div class="flex flex-row justify-center items-center flex-wrap mx-auto *:rounded-xl *:border *:border-lime-400 *:p-2 *:m-2">
+
+          <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/hotel.maharashtra.kesari?igsh=ejQxb202Y285ZzYy">
+            <img src="images/cyb25/Sponsor Logos/Maharastra kesari.png" alt="Sponsor Logo" class="object-contain w-full h-full">
+          </div>
+          <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="">
+        <img src="images/cyb25/Sponsor Logos/amul.png" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+          <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block">
+          <img src="images/cyb25/Sponsor Logos/qelica- white Logo.PNG" alt="Sponsor Logo" class="object-contain w-full h-full">
+          </div>
+          <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/krhospitality?igsh=bDdpcDFsYnMyZ3Jz">
+            <img src="images/cyb25/Sponsor Logos/KR Hospitality.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+          </div>
+          <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="http://Www.bafnajewellers.co.in">
+            <img src="images/cyb25/Sponsor Logos/Bafna.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+          </div>
+          <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block">
+            <img src="images/cyb25/Sponsor Logos/Band baja baarati  logo.png" alt="Sponsor Logo" class="object-contain w-full h-full">
+          </div>
+          
+          <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/fitness_element_?utm_source=ig_web_button_share_sheet&igsh=MWwzeTR3NzF5dHAxOA==">
+            <img src="images/cyb25/Sponsor Logos/GYM.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+          </div>
+          <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/lapinozpizzaindia/">
+            <img src="images/cyb25/Sponsor Logos/La Pinoz.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+          </div>
+          <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://murthys.com/">
+            <img src="images/cyb25/Sponsor Logos/Murthy.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+          </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block">
+        <img src="images/cyb25/Sponsor Logos/Rain & Honey.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block">
+        <img src="images/cyb25/Sponsor Logos/shear Experts.png" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block">
+        <img src="images/cyb25/Sponsor Logos/SimpliLearn.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block">
+        <img src="images/cyb25/Sponsor Logos/Wafer Partner.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block">
+        <img src="images/cyb25/Sponsor Logos/OG Deals.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+    </div>
+  </section>
+
+  <section class="carousel-slide" id="last-slide">
+    <div class="flex flex-row justify-center items-center flex-wrap mx-auto *:rounded-xl *:border *:border-lime-400 *:p-2 *:m-2">
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/palvit_photobooth/">
+        <img src="images/cyb25/Sponsor Logos/PalvitPhotobooth1.Logo.png" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block">
+        <img src="images/cyb25/Sponsor Logos/blossom_heaven_nursery.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/campustimes.pune?utm_source=ig_web_button_share_sheet&igsh=MTNvNWt0bDAyYmhneg==">
+            <img src="images/cyb25/Sponsor Logos/Campus Times Pune.png" alt="Sponsor Logo" class="object-contain w-full h-full">
+          </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block">
+        <img src="images/cyb25/Sponsor Logos/MP Sons enterprises.png" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/neo_cafe0509?igsh=MmN4Z2R3N3hudmQy">
+        <img src="images/cyb25/Sponsor Logos/Neo Cafe.png" alt="Sponsor Logo" class="object-contain w-full h-full bg-slate-300">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block">
+        <img src="images/cyb25/Sponsor Logos/Swami cafe.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.truscholar.io/">
+        <img src="images/cyb25/Sponsor Logos/truScholar.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/matrix_gaming_zone?utm_source=ig_web_button_share_sheet&igsh=MXhhb2NlMXdpMnl3Mw==">
+        <img src="images/cyb25/Sponsor Logos/matrix_gaming.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="https://www.instagram.com/7eleven.india?igsh=MTVlMWJvNjR2Z25h">
+        <img src="images/cyb25/Sponsor Logos/7-eleven.jpg" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+            <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="">
+        <img src="images/cyb25/Sponsor Logos/craftbiz.png" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="">
+        <img src="images/cyb25/Sponsor Logos/graffiti.png" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="">
+        <img src="images/cyb25/Sponsor Logos/dj_kunal.png" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block" onclick="toBack(this.dataset.backlink)" data-backlink="">
+        <img src="images/cyb25/Sponsor Logos/media_mentor.png" alt="Sponsor Logo" class="object-contain w-full h-full">
+      </div>
+      <div class="sponsor-logo w-32 h-20 rounded-md p-1 flex flex-col items-center justify-center mx-2 inline-block">
+        <img src="images/cyb25/Sponsor Logos/Get My Fest Logo.png" alt="Sponsor Logo" class="object-contain w-full h-full bg-slate-300">
+      </div>
+    </div>
+  </section>
 </div>
 
 <!-- Fixed Footer Section for Mobile -->
-<div class="carousel-footer fixed bottom-0 left-0 w-full h-16 text-white flex items-center justify-center z-10 sm:hidden">
-  <button id="scroll-footer-btn" style="background: none; border: none; cursor: pointer;">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<div class="carousel-footer fixed bottom-0 left-0 w-full h-16 text-white flex items-center justify-center z-10">
+  <button id="footer-arrow" style="background: none; border: none; cursor: pointer;">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
     </svg>
   </button>
 </div>
+
+<style>
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-385%);
+    }
+  }
+
+  .animate-marquee {
+    animation: marquee 50s linear infinite;
+    animation-play-state: running;
+  }
+
+  .hover\:pause-marquee:hover {
+    animation-play-state: paused;
+  }
+</style>
 
 <script src="js/cyberon25.js"></script>
 </body>
