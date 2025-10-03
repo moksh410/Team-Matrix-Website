@@ -147,7 +147,6 @@
     .blinking-text {
         color: #fff;
         animation: blink 1.5s infinite;
-        text-decoration: underline;
     }
 
     @keyframes blink{

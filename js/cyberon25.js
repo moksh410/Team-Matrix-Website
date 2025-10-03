@@ -25,13 +25,10 @@ eventItems.forEach(item => {
     });
 });
 
-// make the registration open button redirect to link
-// https://unstop.com/college-fests/cyberon-2025-symbiosis-center-for-information-technology-scit-pune-392359
-
 document.addEventListener('DOMContentLoaded', () => {
-    const registerBtn = document.getElementById('register-btn');
+    const registerBtn = document.getElementById('insta-cta-btn');
     registerBtn.addEventListener('click', () => {
-        window.location.href = 'https://unstop.com/college-fests/cyberon-2025-symbiosis-center-for-information-technology-scit-pune-392359';
+        window.open('https://www.instagram.com/teammatrixscit/', '_blank');
     });
 });
 

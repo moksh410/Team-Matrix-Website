@@ -229,16 +229,12 @@
                     <a href="cyberon25.html" class="countdown-strip-link" target="_blank" aria-label="View Cyberon Event">
                         <div class="countdown-content">
                             <div class="countdown-row">
-                                <div class="event-title-col">
+                                <div class="event-title-col blinking-text">
                                     <span class="event-title-main">Cyberon</span>
                                     <span class="event-title-year">'25</span> <span>•</span>
-                                    <span class="event-subtitle-mobile blinking-text">REGISTER NOW!</span>
                                 </div>
-                                <div class="timer-group">
-                                    <div class="timer-unit"><span id="cyberon-days">00</span><span class="timer-label">Days</span></div>
-                                    <div class="timer-unit"><span id="cyberon-hours">00</span><span class="timer-label">Hours</span></div>
-                                    <div class="timer-unit"><span id="cyberon-minutes">00</span><span class="timer-label">Minutes</span></div>
-                                    <div class="timer-unit"><span id="cyberon-seconds">00</span><span class="timer-label">Seconds</span></div>
+                                <div class="" style="color: white; font-weight: bold; font-size: 1.2rem; text-align: center;">
+                                    Cyberon has concluded. Thank you for your participation!
                                 </div>
                                 <button class="cta-btn">
                                     <span class="cta-btn-text">View Event</span>
@@ -247,39 +243,6 @@
                         </div>
                     </a>
                 </div>
-                <script>
-                function updateCyberonCountdown() {
-                    const eventDate = new Date('2025-09-27T00:00:00');
-                    const now = new Date();
-                    let diff = eventDate - now;
-                    let days = 0, hours = 0, minutes = 0, seconds = 0;
-                    if (diff > 0) {
-                        days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                        diff -= days * (1000 * 60 * 60 * 24);
-                        hours = Math.floor(diff / (1000 * 60 * 60));
-                        diff -= hours * (1000 * 60 * 60);
-                        minutes = Math.floor(diff / (1000 * 60));
-                        diff -= minutes * (1000 * 60);
-                        seconds = Math.floor(diff / 1000);
-                    }
-                    var daysEl = document.getElementById('cyberon-days');
-                    var hoursEl = document.getElementById('cyberon-hours');
-                    var minutesEl = document.getElementById('cyberon-minutes');
-                    var secondsEl = document.getElementById('cyberon-seconds');
-                    if (!daysEl || !hoursEl || !minutesEl || !secondsEl) {
-                        setTimeout(updateCyberonCountdown, 1000);
-                        return;
-                    }
-                    daysEl.textContent = String(days).padStart(2, '0');
-                    hoursEl.textContent = String(hours).padStart(2, '0');
-                    minutesEl.textContent = String(minutes).padStart(2, '0');
-                    secondsEl.textContent = String(seconds).padStart(2, '0');
-                }
-                window.addEventListener('DOMContentLoaded', function() {
-                    updateCyberonCountdown();
-                    setInterval(updateCyberonCountdown, 1000);
-                });
-                </script>
 
                     <div class="row justify-content-center g-0">
                         <div class="col-md-auto col-sm-10 border-radius-100px pt-15px pb-15px ps-45px pe-45px md-ps-20px md-pe-20px border border-color-transparent-white-very-light fs-22 text-white text-md-start text-center">
