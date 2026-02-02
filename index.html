@@ -127,6 +127,34 @@
             transform: rotateY(180deg);
         }
 
+        @keyframes neon-pulse {
+            0% { box-shadow: 0 0 10px rgba(0, 255, 0, 0.4), inset 0 0 5px rgba(0, 255, 0, 0.1); border-color: rgba(0, 255, 0, 0.4); }
+            50% { box-shadow: 0 0 20px rgba(0, 255, 0, 0.7), inset 0 0 10px rgba(0, 255, 0, 0.2); border-color: rgba(0, 255, 0, 0.8); }
+            100% { box-shadow: 0 0 10px rgba(0, 255, 0, 0.4), inset 0 0 5px rgba(0, 255, 0, 0.1); border-color: rgba(0, 255, 0, 0.4); }
+        }
+
+        .btn-privathon-explore {
+            background: rgba(0, 20, 0, 0.6) !important;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 2px solid #00ff00;
+            color: #00ff00 !important;
+            animation: neon-pulse 2s infinite ease-in-out;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-weight: 800; 
+            letter-spacing: 2px;
+            padding: 15px 40px;
+        }
+
+        .btn-privathon-explore:hover {
+            animation: none;
+            background: #00ff00 !important;
+            box-shadow: 0 0 50px rgba(0, 255, 0, 0.6) !important;
+            color: #000 !important;
+            transform: scale(1.05);
+        }
+
     </style>
     
     </head>
@@ -216,25 +244,23 @@
                         <div class="fs-80 lg-fs-70 md-fs-60 fw-600 ls-minus-2px mb-25px text-white"><div class="highlight-separator z-index-1" data-shadow-animation="true" data-animation-delay="500">TEAM MATRIX<span><img src="images/demo-cryptocurrency-highlight-separator.svg" alt="" class="h-25px"></span></div></div>
                         <p class="fs-20 fw-300 w-55 lg-w-70 md-w-100 mx-auto mb-0" style="color: #a2a2a2;">Team Matrix, SCIT's premier cybersecurity committee, is dedicated to building awareness, driving innovation, and empowering individuals in the field of information security. Join us in shaping a safer digital future through collaboration and cutting-edge initiatives!</p>
                         <div class="d-flex align-items-center justify-content-center flex-wrap mt-40px xs-mt-30px" style="margin-left: 1em;">
-                            <a href="cyberon25.html" target="_blank" class="btn btn-base-color btn-large btn-rounded d-inline-block me-30px xs-me-10px btn-box-shadow btn-switch-text sm-mt-10px sm-mb-10px section-link">
-                                <span>
-                                    <span class="btn-double-text text-black font-bold" data-text="Go Ahead">Cyberon '25</span>
-                                </span>
+                            <a href="privathon.html" target="_blank" class="btn btn-large btn-rounded d-inline-block me-30px xs-me-10px sm-mt-10px sm-mb-10px btn-privathon-explore">
+                                Explore Privathon
                             </a>
                         </div>
                     </div> 
                 </div>
 
-                <div id="cyberon-countdown-strip">
-                    <a href="cyberon25.html" class="countdown-strip-link" target="_blank" aria-label="View Cyberon Event">
+                <div id="privathon-countdown-strip">
+                    <a href="privathon.html" class="countdown-strip-link" target="_blank" aria-label="View Privathon Event">
                         <div class="countdown-content">
                             <div class="countdown-row">
                                 <div class="event-title-col blinking-text">
-                                    <span class="event-title-main">Cyberon</span>
-                                    <span class="event-title-year">'25</span> <span>•</span>
+                                    <span class="event-title-main">Privathon</span>
+                                    <span> - this Data Privacy Week</span>
                                 </div>
-                                <div class="" style="color: white; font-weight: bold; font-size: 1.2rem; text-align: center;">
-                                    Cyberon has concluded. Thank you for your participation!
+                                <div class="d-none d-md-block" style="color: white; font-weight: bold; font-size: 1.2rem; text-align: center;">
+                                    LIVE NOW
                                 </div>
                                 <button class="cta-btn">
                                     <span class="cta-btn-text">View Event</span>
@@ -596,43 +622,7 @@
     <script type="text/javascript" src="js/main.js"></script>
 
     <script>
-        function updateCyberonCountdown() {
-            const eventDate = new Date('2025-09-27T00:00:00');
-            const now = new Date();
-            let diff = eventDate - now;
-            let days = 0, hours = 0, minutes = 0, seconds = 0;
-            if (diff > 0) {
-                days = Math.floor(diff / (1000 * 60 * 60 * 24));
-                diff -= days * (1000 * 60 * 60 * 24);
-                hours = Math.floor(diff / (1000 * 60 * 60));
-                diff -= hours * (1000 * 60 * 60);
-                minutes = Math.floor(diff / (1000 * 60));
-                diff -= minutes * (1000 * 60);
-                seconds = Math.floor(diff / 1000);
-            }
-
-            try {
-                var daysEl = document.getElementById('cyberon-days');
-            }
-            catch(e) {
-                setInterval(function() {
-                    daysEl = document.getElementById('cyberon-days');
-                }, 60000);
-                return; // Ensure the function exits until the try-catch block completes
-            }
-
-            var hoursEl = document.getElementById('cyberon-hours');
-            var minutesEl = document.getElementById('cyberon-minutes');
-            var secondsEl = document.getElementById('cyberon-seconds');
-            daysEl.textContent = String(days).padStart(2, '0');
-            hoursEl.textContent = String(hours).padStart(2, '0');
-            minutesEl.textContent = String(minutes).padStart(2, '0');
-            secondsEl.textContent = String(seconds).padStart(2, '0');
-        }
-        window.addEventListener('DOMContentLoaded', function() {
-            updateCyberonCountdown();
-            setInterval(updateCyberonCountdown, 1000);
-        });
+        // Privathon Countdown removed as event is LIVE
     </script>
 
     <!-- FLIP ANIMATION -->

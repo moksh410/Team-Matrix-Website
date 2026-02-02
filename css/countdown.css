@@ -16,7 +16,7 @@
     text-decoration: none;
     color: inherit;
 }
-#cyberon-countdown-strip {
+#privathon-countdown-strip {
     width: 100%;
     background: linear-gradient(90deg, #164e63 0%, #97e14d 100%);
     color: #fff;
@@ -33,7 +33,7 @@
     padding: 0;
 }
 
-#cyberon-countdown-strip .countdown-content {
+#privathon-countdown-strip .countdown-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,13 +43,13 @@
     gap: 24px;
 }
 
-#cyberon-countdown-strip .timer-group {
+#privathon-countdown-strip .timer-group {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-#cyberon-countdown-strip .timer-unit {
+#privathon-countdown-strip .timer-unit {
     background: #97e14d;
     color: #164e63;
     font-size: 1.3rem;
@@ -65,7 +65,7 @@
     align-items: center;
 }
 
-#cyberon-countdown-strip .timer-label {
+#privathon-countdown-strip .timer-label {
     color: #000;
     font-size: 0.9rem;
     font-weight: 500;
@@ -73,7 +73,7 @@
     line-height: 1.5;
 }
 
-#cyberon-countdown-strip .cta-btn {
+#privathon-countdown-strip .cta-btn {
     background: #164e63;
     color: #97e14d;
     font-weight: 800;
@@ -86,7 +86,7 @@
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
 }
-#cyberon-countdown-strip .cta-btn:hover {
+#privathon-countdown-strip .cta-btn:hover {
     background: #97e14d;
     color: #164e63;
 }
@@ -99,14 +99,14 @@
 
 /* DESKTOP STYLES */
 @media (min-width: 769px) {
-    #cyberon-countdown-strip .timer-unit span[id^="cyberon-"] {
+    #privathon-countdown-strip .timer-unit span[id^="privathon-"] {
         font-size: 1.7rem;
         font-weight: 900;
         letter-spacing: 2px;
         color: #164e63;
         line-height: 0.7;
     }
-    #cyberon-countdown-strip .countdown-row {
+    #privathon-countdown-strip .countdown-row {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -115,7 +115,7 @@
         max-width: 1200px;
         margin: 0 auto;
     }
-    #cyberon-countdown-strip .event-title-col {
+    #privathon-countdown-strip .event-title-col {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -124,7 +124,7 @@
         margin-right: 8px;
         gap: 8px;
     }
-    #cyberon-countdown-strip .event-title-main {
+    #privathon-countdown-strip .event-title-main {
     color: #bfff00;
     font-size: 1.35rem;
     font-weight: 900;
@@ -133,7 +133,7 @@
     line-height: 1.1;
     text-shadow: 0 2px 8px #164e6344, 0 0 2px #164e63;
     }
-    #cyberon-countdown-strip .event-title-year {
+    #privathon-countdown-strip .event-title-year {
         color: #fff;
         font-size: 1.15rem;
         font-weight: 700;
@@ -163,15 +163,15 @@
     .countdown-strip-link {
         cursor: pointer;
     }
-    #cyberon-countdown-strip .cta-btn {
+    #privathon-countdown-strip .cta-btn {
         display: none !important;
     }
-    #cyberon-countdown-strip {
+    #privathon-countdown-strip {
         padding: 10px 0 8px 0 !important;
         min-height: 44px;
         font-size: 1rem;
     }
-    #cyberon-countdown-strip .countdown-content {
+    #privathon-countdown-strip .countdown-content {
         flex-direction: column;
         gap: 8px;
         padding: 0 2px;
@@ -179,7 +179,7 @@
         width: 100%;
         align-items: center;
     }
-    #cyberon-countdown-strip .countdown-row {
+    #privathon-countdown-strip .countdown-row {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -189,7 +189,7 @@
         max-width: 98vw;
         padding: 0;
     }
-    #cyberon-countdown-strip .event-title-col {
+    #privathon-countdown-strip .event-title-col {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -198,7 +198,7 @@
         margin-bottom: 4px;
         gap: 6px;
     }
-    #cyberon-countdown-strip .event-title-main {
+    #privathon-countdown-strip .event-title-main {
         color: #00ff44;
         font-size: 1.1rem;
         font-weight: 800;
@@ -207,7 +207,7 @@
         line-height: 1.1;
         text-shadow: 0 1px 4px #164e6344;
     }
-    #cyberon-countdown-strip .event-title-year {
+    #privathon-countdown-strip .event-title-year {
         color: #fff;
         font-size: 1rem;
         font-weight: 700;
@@ -215,7 +215,7 @@
         line-height: 1.1;
         text-shadow: 0 1px 4px #164e6344;
     }
-    #cyberon-countdown-strip .timer-group {
+    #privathon-countdown-strip .timer-group {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -225,7 +225,7 @@
         max-width: 320px;
         margin: 0 auto;
     }
-    #cyberon-countdown-strip .timer-unit {
+    #privathon-countdown-strip .timer-unit {
         background: #97e14d;
         color: #164e63;
         border-radius: 8px;
@@ -240,14 +240,14 @@
         font-weight: 900;
         padding: 0;
     }
-    #cyberon-countdown-strip .timer-unit span[id^="cyberon-"] {
+    #privathon-countdown-strip .timer-unit span[id^="privathon-"] {
         font-size: 1.2rem;
         font-weight: 900;
         line-height: 2.3;
         color: #164e63;
         margin-bottom: 0;
     }
-    #cyberon-countdown-strip .timer-label {
+    #privathon-countdown-strip .timer-label {
         display: block !important;
         font-size: 0.7rem;
         color: #164e63;
@@ -256,17 +256,17 @@
         line-height: 1.1;
         text-align: center;
     }
-    #cyberon-countdown-strip .cta-btn {
+    #privathon-countdown-strip .cta-btn {
         display: none;
     }
-    #cyberon-countdown-strip .cta-btn svg {
+    #privathon-countdown-strip .cta-btn svg {
         width: 22px;
         height: 22px;
         display: block;
         fill: #164e63;
     }
 
-    #cyberon-countdown-strip .timer-unit span[id^="cyberon-"] {
+    #privathon-countdown-strip .timer-unit span[id^="privathon-"] {
     line-height: 1;
     font-size: 1.5rem;
     vertical-align: middle;
@@ -276,3 +276,4 @@
 .hidden {
     display: none !important;
 }
+

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privathon - A Data Privacy Week initiative by Team Matrix">
+    <title>Privathon - Team Matrix</title>
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="images/title icon 1.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #3c1450;
+            background: linear-gradient(351deg, rgba(60, 21, 77, 1) 0%, rgba(43, 100, 58, 1) 59%, rgba(63, 41, 118, 1) 100%);
+            color: white;
+        }
+        /* Custom Utilities for wireframe look */
+        .wireframe-border {
+            border: 2px solid white;
+        }
+        .circle-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid white;
+            border-radius: 50%;
+            aspect-ratio: 1/1;
+        }
+        .diamond-shape {
+            transform: rotate(45deg);
+            border: 2px solid white;
+            aspect-ratio: 1/1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .diamond-inner {
+            transform: rotate(-45deg);
+        }
+        .section-screen {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        @keyframes gradient-xy {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+        .moving-gradient {
+            background-size: 200% auto;
+            animation: gradient-xy 3s ease infinite;
+        }
+    </style>
+</head>
+<body class="text-white relative overflow-x-hidden">
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="fixed top-0 inset-x-0 z-50 bg-black/20 backdrop-blur-md px-4 py-3 mt-2 mx-4 rounded-full shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] rounded-3xl ring-1 ring-white/10">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Left: Matrix Logo -->
+            <div class="w-1/2 md:w-1/4">
+                <a href="index.html">
+                    <img src="./images/matrix-logo-white@2x.png" alt="Matrix Logo" class="h-7 md:h-10 object-contain">
+                </a>
+            </div>
+
+            <!-- Middle: Page Controls (Desktop) -->
+            <div class="hidden md:flex flex-1 justify-center space-x-2 text-sm font-bold uppercase tracking-widest">
+                <a href="index.html" class="px-5 py-2 rounded-xl hover:bg-white/10 transition-all duration-300 hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]">Home</a>
+                <a href="aboutus.html" class="px-5 py-2 rounded-xl hover:bg-white/10 transition-all duration-300 hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]">About</a>
+                <a href="events.html" class="px-5 py-2 rounded-xl hover:bg-white/10 transition-all duration-300 hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]">Events</a>
+                <a href="wholeteam.html" class="px-5 py-2 rounded-xl hover:bg-white/10 transition-all duration-300 hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]">Team</a>
+                <a href="contactus.html" class="px-5 py-2 rounded-xl hover:bg-white/10 transition-all duration-300 hover:shadow-[0_0_10px_rgba(255,255,255,0.1)]">Contact Us</a>
+            </div>
+
+            <!-- Right: Symbiosis Logo (Desktop) -->
+            <div class="hidden md:flex w-1/4 justify-end">
+                <a href="https://www.scit.edu" target="_blank">
+                    <img src="images/Symbiosis Logo.png" alt="Symbiosis Logo" class="h-10 object-contain px-2 rounded-sm">
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button (Hamburger) -->
+            <div class="md:hidden flex items-center justify-end w-1/2">
+                <button id="mobile-menu-btn" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Slide-out) -->
+        <!-- Moved outside nav to prevent scroll issues -->
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section-screen w-full relative border-b border-white/10 shadow-[0_1px_0_0_rgba(255,255,255,0.1)] pt-20 md:pt-26">
+        <div class="container mx-auto flex flex-col items-center justify-center text-center space-y-12">
+            
+            <div class="relative">
+                <h1 class="text-4xl md:text-5xl font-black tracking-tighter border-4 border-white p-4 md:p-8 inline-block select-none">
+                    TEAM MATRIX
+                </h1>
+            </div>
+
+            <div class="text-2xl md:text-2xl font-light tracking-[0.5em] uppercase border-b-2 border-white pb-2">
+                Presents
+            </div>
+
+            <div class="circle-text w-80 md:w-[350px] select-none hover:bg-white hover:text-black transition-all duration-500 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_rgba(255,255,255,0.8)] overflow-hidden">
+                <img src="images/privathon/privathon.png" alt="" class="w-full h-full object-cover scale-110">
+            </div>
+
+            <div class="text-xl md:text-2xl font-light tracking-widest uppercase">
+                as part of Data Privacy Week 2026
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Theme & Events Section -->
+    <section class="section-screen w-full relative border-b border-white/10 shadow-[0_1px_0_0_rgba(255,255,255,0.1)] py-12">
+        <div class="container mx-auto px-4 h-full flex flex-col justify-center">
+            
+            <!-- Theme Part -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-5xl md:text-7xl font-bold uppercase italic leading-none">
+                        This Year's<br>Theme
+                    </h2>
+                    <div class="text-4xl md:text-6xl font-black uppercase text-transparent bg-clip-text bg-[linear-gradient(to_right,#4ade80,#22d3ee,#818cf8,#c084fc)] moving-gradient drop-shadow-[0_0_10px_rgba(34,211,238,0.5)] border-b-4 border-white inline-block pb-2">
+                        Privacy Spectrum
+                    </div>
+                    <p class="text-lg md:text-xl leading-relaxed border-l-4 border-white pl-6">
+                        Privacy Spectrum explores data privacy beyond simple binaries, covering personal protection, cybersecurity, legal rights, and ethics. This event reveals how these interconnected dimensions shape privacy for individuals and society in the digital age.
+                    </p>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="images/privathon/privathon_theme.png" alt="">
+                </div>
+            </div>
+
+            <!-- Events Header -->
+            <div class="text-center mb-16 mt-8">
+                <span class="border-2 border-white px-8 py-3 text-2xl md:text-4xl font-bold uppercase tracking-widest shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
+                    Our Events
+                </span>
+            </div>
+
+            <!-- Events Part -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-12">
+                
+                <!-- Event 1: Level Up -->
+                <div class="flex flex-col items-center text-center space-y-6">
+                    <div class="w-64 h-64 md:w-72 md:h-72 mb-6 p-6 rounded-3xl border-2 border-white/20 bg-white/5 backdrop-blur-md shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex items-center justify-center group hover:bg-white/10 hover:border-white/60 hover:shadow-[0_0_40px_rgba(255,255,255,0.25)] transition-all duration-500 hover:-translate-y-2">
+                        <img src="images/privathon/levelup.png" class="w-full h-full object-contain filter drop-shadow-[0_0_5px_rgba(255,255,255,0.5)] group-hover:scale-110 transition-transform duration-500" alt="Level Up">
+                    </div>
+                    <h3 class="text-3xl font-bold uppercase underline decoration-2 underline-offset-8">Level Up</h3>
+                    <p class="max-w-md mx-auto text-gray-300">
+                        Get ready for a campus-wide interactive challenge. Chase clues, crack puzzles, clear levels, and prove your team has what it takes to win.
+                    </p>
+                    <div class="w-32 h-1 bg-white"></div>
+                    <div class="w-24 h-1 bg-white"></div>
+                </div>
+
+                <!-- Event 2: Faisla Unlocked -->
+                <div class="flex flex-col items-center text-center space-y-6">
+                    <div class="w-64 h-64 md:w-72 md:h-72 mb-6 p-6 rounded-3xl border-2 border-white/20 bg-white/5 backdrop-blur-md shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] flex items-center justify-center group hover:bg-white/10 hover:border-white/60 hover:shadow-[0_0_40px_rgba(255,255,255,0.25)] transition-all duration-500 hover:-translate-y-2">
+                        <img src="images/privathon/faislaunlocked.png" class="w-full h-full object-contain filter drop-shadow-[0_0_5px_rgba(255,255,255,0.5)] group-hover:scale-110 transition-transform duration-500" alt="Faisla Unlocked">
+                    </div>
+                    <h3 class="text-3xl font-bold uppercase underline decoration-2 underline-offset-8">Faisla Unlocked</h3>
+                    <p class="max-w-md mx-auto text-gray-300">
+                        Enter a courtroom-style showdown. Take the stand as Prosecutor or Defence, debate real-world data privacy cases, and prove your mastery of privacy, ethics, and responsibility.
+                    </p>
+                    <div class="w-32 h-1 bg-white"></div>
+                    <div class="w-24 h-1 bg-white"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="py-20 w-full border-b border-white/10 shadow-[0_1px_0_0_rgba(255,255,255,0.1)]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="border-2 border-white px-8 py-3 text-2xl font-bold uppercase tracking-widest shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
+                    Our Sponsors
+                </span>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12 items-end">
+                
+                <!-- 1. The Leo: Celebration Partner -->
+                <div class="group w-full">
+                    <div class="text-center text-yellow-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(253,224,71,0.6)]">
+                         Celebration<br>Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/theleo.png" alt="The Leo" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 2. Blue Wave: Laundry Partner -->
+                <div class="group w-full">
+                    <div class="text-center text-blue-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(147,197,253,0.6)]">
+                        Laundry Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/bluewave.png" alt="Blue Wave Laundry" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 3. RR Caps: Merchandise Partner -->
+                <div class="group w-full">
+                    <div class="text-center text-orange-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(253,186,116,0.6)]">
+                        Merchandise<br>Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                         <img src="images/privathon/sponsors/rrcaps.png" alt="RR Caps" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 4. Klimara: Skincare Partner -->
+                <div class="group w-full">
+                    <div class="text-center text-rose-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(253,164,175,0.6)]">
+                        Skincare Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/klimara.png" alt="Klimara" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 5. Burn and Bling: Candle Partner (Moved) -->
+                <div class="group w-full">
+                    <div class="text-center text-orange-200 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(254,215,170,0.6)]">
+                         Candle Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/burnandbling.png" alt="Burn and Bling" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 6. Urjha: Perfume Partner -->
+                <div class="group w-full">
+                    <div class="text-center text-fuchsia-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(240,171,252,0.6)]">
+                        Perfume Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/urjha.png" alt="Urjha" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 7. KFC: Fast Food Partner -->
+                <div class="group w-full">
+                     <div class="text-center text-red-400 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(248,113,113,0.6)]">
+                        Fast Food<br>Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/kfc.png" alt="KFC" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 8. Goosebumps: Arena Partner -->
+                <div class="group w-full">
+                    <div class="text-center text-indigo-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(165,180,252,0.6)]">
+                        Arena Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                         <img src="images/privathon/sponsors/goosebumps.png" alt="Goosebumps" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 9. Karims: Biryani Partner -->
+                <div class="group w-full">
+                     <div class="text-center text-amber-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(252,211,77,0.6)]">
+                        Biryani Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/karims.png" alt="Karims" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 10. Zebra: Salon Partner -->
+                <div class="group w-full">
+                    <div class="text-center text-neutral-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(212,212,212,0.6)]">
+                        Salon Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/zebra.png" alt="Zebra" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 11. Zomoz: Momos Partner -->
+                <div class="group w-full">
+                     <div class="text-center text-red-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(252,165,165,0.6)]">
+                        Momos Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/zomos.png" alt="Zomoz" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 12. Blackers: Styling Partner -->
+                <div class="group w-full">
+                    <div class="text-center text-gray-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(209,213,219,0.6)]">
+                         Styling Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                         <img src="images/privathon/sponsors/blackers.png" alt="Blackers" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 13. Centro: Shopping Partner -->
+                <div class="group w-full">
+                     <div class="text-center text-purple-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(216,180,254,0.6)]">
+                        Shopping Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/centro.png" alt="Centro" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 14. Brune: Water Bottles Partner -->
+                <div class="group w-full">
+                    <div class="text-center text-cyan-200 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(165,243,252,0.6)]">
+                        Water Bottles<br>Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/brunecafe.png" alt="Brune" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 15. Cleverbrat: Sparkling Ambience Partner -->
+                <div class="group w-full">
+                    <div class="text-center text-teal-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(94,234,212,0.6)]">
+                        Sparkling<br>Ambience Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/cleverbrat.png" alt="Cleverbrat" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 16. Kaggle: Custom Bag Partner -->
+                <div class="group w-full">
+                    <div class="text-center text-blue-400 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(96,165,250,0.6)]">
+                        Custom Bag<br>Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/kaggle.png" alt="Kaggle" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- 17. Sticker Central: Sticker Partner -->
+                <div class="group w-full">
+                    <div class="text-center text-lime-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(190,242,100,0.6)]">
+                        Sticker Partner
+                    </div>
+                    <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                         <img src="images/privathon/sponsors/stickercentral.png" alt="Sticker Central" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+
+                <!-- Other Sponsors (Astrovastu, Heena) -->
+                <div class="group w-full">
+                    <div class="text-center text-lime-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(190,242,100,0.6)]">
+                        Astrology Partner
+                    </div>
+                     <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/astrovastu.png" alt="Astrovastu" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+                
+                <div class="group w-full">
+                    <div class="text-center text-lime-300 font-bold tracking-[0.2em] text-xs md:text-xs uppercase mb-3 drop-shadow-[0_0_8px_rgba(190,242,100,0.6)]">
+                        Jewellery Partner
+                    </div>
+                     <div class="aspect-square border border-white/20 bg-white/5 backdrop-blur-md rounded-2xl shadow-[inset_0_0_20px_rgba(255,255,255,0.05)] p-6 flex items-center justify-center group-hover:bg-white/10 transition-all duration-300 group-hover:shadow-[0_0_25px_rgba(255,255,255,0.25)] group-hover:scale-[1.02] group-hover:border-white/40">
+                        <img src="images/privathon/sponsors/heena.png" alt="Heena" class="w-full h-full object-contain filter drop-shadow-[0_0_3px_rgba(255,255,255,0.3)]">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 w-full">
+        <div class="container mx-auto px-4">
+             <!-- Mimicking navbar style -->
+            <div class="bg-black/20 backdrop-blur-md border border-white/10 rounded-3xl shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] ring-1 ring-white/5 p-6 md:px-10 md:py-6 flex flex-col md:flex-row justify-between items-center gap-6">
+                
+                <!-- Left: Contact/Links -->
+                <div class="flex flex-col md:flex-row items-center gap-4 md:gap-8">
+                     <a href="contactus.html" class="text-sm font-bold uppercase tracking-widest text-white/90 hover:text-white transition-colors hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">Contact Us</a>
+                     <a href="https://www.scit.edu" target="_blank" class="text-sm font-bold uppercase tracking-widest text-white/90 hover:text-white transition-colors hover:drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]">SCIT Website</a>
+                </div>
+
+                <!-- Center: Handles -->
+                <div class="flex flex-col md:flex-row items-center gap-3 md:gap-6 text-sm font-mono text-gray-300">
+                    <a href="mailto:teammatrix@scit.edu" class="hover:text-cyan-300 transition-colors flex items-center gap-2 group">
+                        <svg class="w-4 h-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        teammatrix@scit.edu
+                    </a>
+                    <a href="https://instagram.com/teammatrixscit" target="_blank" class="hover:text-pink-400 transition-colors flex items-center gap-2 group">
+                        <svg class="w-4 h-4 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path><rect width="20" height="20" x="2" y="2" rx="5" ry="5" stroke-width="2"></rect></svg>
+                        @teammatrixscit
+                    </a>
+                </div>
+
+                <!-- Right: Copyright -->
+                <div class="text-xs text-gray-500 font-mono">
+                    &copy; 2026 Team Matrix
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <div id="mobile-menu" class="fixed top-24 left-6 right-6 h-fit bg-white/5 backdrop-blur-3xl transform translate-x-[120%] transition-transform duration-300 ease-in-out z-50 flex flex-col p-6 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] rounded-3xl border border-white/20 ring-1 ring-white/10">
+            <!-- Header: Logo Left, Close Right -->
+            <div class="flex justify-between items-center mb-6 pb-4 border-b border-white/10">
+                 <a href="https://www.scit.edu" target="_blank">
+                    <img src="images/Symbiosis Logo.png" alt="Symbiosis Logo" class="h-8 object-contain px-2 rounded-sm opacity-90">
+                 </a>
+                <button id="mobile-menu-close" class="text-white/80 focus:outline-none hover:text-white transition-colors">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Links -->
+            <div class="flex flex-col space-y-2 text-lg font-bold uppercase tracking-widest text-white/90">
+                <a href="index.html" class="flex items-center space-x-4 p-3 rounded-xl hover:bg-white/10 transition-all group">
+                    <div class="bg-white/10 p-2 rounded-lg group-hover:bg-white/20 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                    </div>
+                    <span>Home</span>
+                </a>
+                <a href="aboutus.html" class="flex items-center space-x-4 p-3 rounded-xl hover:bg-white/10 transition-all group">
+                    <div class="bg-white/10 p-2 rounded-lg group-hover:bg-white/20 transition-colors">
+                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <span>About</span>
+                </a>
+                <a href="events.html" class="flex items-center space-x-4 p-3 rounded-xl hover:bg-white/10 transition-all group">
+                    <div class="bg-white/10 p-2 rounded-lg group-hover:bg-white/20 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <span>Events</span>
+                </a>
+                <a href="wholeteam.html" class="flex items-center space-x-4 p-3 rounded-xl hover:bg-white/10 transition-all group">
+                    <div class="bg-white/10 p-2 rounded-lg group-hover:bg-white/20 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <span>Team</span>
+                </a>
+                <a href="contactus.html" class="flex items-center space-x-4 p-3 rounded-xl hover:bg-white/10 transition-all group">
+                    <div class="bg-white/10 p-2 rounded-lg group-hover:bg-white/20 transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    </div>
+                    <span>Contact Us</span>
+                </a>
+            </div>
+        </div>
+
+    <!-- Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-transparent backdrop-blur-sm z-40 hidden transition-opacity duration-300"></div>
+
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const menu = document.getElementById('mobile-menu');
+        const overlay = document.getElementById('mobile-menu-overlay');
+        const body = document.body;
+
+        function toggleMenu() {
+            const isClosed = menu.classList.contains('translate-x-[120%]');
+            if (isClosed) {
+                // Open menu
+                menu.classList.remove('translate-x-[120%]');
+                overlay.classList.remove('hidden');
+                // Small delay to allow display:block to apply before opacity transition
+                setTimeout(() => {
+                    overlay.classList.remove('opacity-0'); 
+                    overlay.classList.add('opacity-100');
+                }, 10);
+                body.style.overflow = 'hidden'; // Prevent background scrolling
+            } else {
+                // Close menu
+                menu.classList.add('translate-x-[120%]');
+                overlay.classList.remove('opacity-100');
+                overlay.classList.add('opacity-0');
+                setTimeout(() => {
+                    overlay.classList.add('hidden');
+                }, 300); // Wait for transition
+                body.style.overflow = '';
+            }
+        }
+
+        btn.addEventListener('click', toggleMenu);
+        closeBtn.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+    </script>
+</body>
+</html>
