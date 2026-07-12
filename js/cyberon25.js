@@ -60,3 +60,34 @@ function toBack(link) {
         window.open(link, '_blank');
     }
 }
+
+// ---- performance fixes ----
+// duplicate the sponsor conveyor belt once so the -50% marquee loop is seamless
+(function () {
+    const belt = document.getElementById('conveyor-belt');
+    if (!belt) return;
+    const clone = belt.innerHTML;
+    belt.insertAdjacentHTML('beforeend', clone);
+})();
+
+// lazy-load all sponsor / conveyor images to cut initial page weight
+document.querySelectorAll('.conveyor-sponsor-logo img, .sponsor-logo img').forEach(img => {
+    img.loading = 'lazy';
+    img.decoding = 'async';
+});
+
+// pause the heavy background video on small screens (mobile shows the
+// carousel instead, so the video just burns CPU/battery in the background)
+(function () {
+    const bgVideo = document.querySelector('.bg-video');
+    if (!bgVideo) return;
+    const syncVideo = () => {
+        if (window.innerWidth < 768) {
+            bgVideo.pause();
+        } else if (bgVideo.paused) {
+            bgVideo.play().catch(() => {});
+        }
+    };
+    syncVideo();
+    window.addEventListener('resize', syncVideo);
+})();

@@ -1,231 +1,147 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="shortcut icon" href="images/title icon 1.png">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/conresponsive.css">
-    <link rel="stylesheet" href="css/news.css"/>
-    <link rel="stylesheet" href="css/vendors.min.css"/>
-    <link rel="stylesheet" href="css/icon.min.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/responsive.css"/>
-    <link rel="stylesheet" href="css/teamcss.css"/> 
-
-    <style>
-    .bg-video {
-        position: fixed;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -1;
-        object-fit: cover;
-    }
-    </style>
-    
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Contact Us — Team Matrix</title>
+<meta name="description" content="Open a channel to Team Matrix — questions, collaborations, sponsorships and more.">
+<link rel="shortcut icon" href="images/common/title icon 1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/matrix.css">
 </head>
+<body>
 
+<canvas id="rain"></canvas>
+<div class="scanlines"></div>
+<div class="vignette"></div>
 
-    <div class="cursor-page-inner">
-        <div class="circle-cursor circle-cursor-inner"></div>
-        <div class="circle-cursor circle-cursor-outer"></div>
-    </div>
+<nav class="mxnav">
+  <a class="logo" href="index.html"><img src="images/common/matrix-logo-white@2x.png" alt="Team Matrix"></a>
+  <button id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  <ul id="menu">
+    <li><a href="index.html">~/home</a></li>
+    <li><a href="aboutus.html">~/about</a></li>
+    <li><a href="events.html">~/events</a></li>
+    <li><a href="wholeteam.html">~/team</a></li>
+    <li><a href="alumni.html">~/alumni</a></li>
+    <li><a class="now" href="contactus.html">~/contact</a></li>
+    <li><a class="hot" href="cyberon25.html">CYBERON'26</a></li>
+  </ul>
+  <a class="scit" href="https://www.scit.edu" target="_blank" rel="noopener"><img src="images/common/Symbiosis Logo.png" alt="SCIT — Symbiosis"></a>
+</nav>
 
-    <!-- HEADER START -->
-    <header> 
-        <nav class="navbar navbar-expand-lg header-transparent header-dark bg-transparent header-reverse glass-effect border-bottom border-color-transparent-white-light" data-header-hover="dark">
-            <div class="container-fluid">
-                <!-- Logo Section -->
-                <div class="d-flex align-items-center me-auto">
-                    
-                      <a href="index.html">  <img src="./images/matrix-logo-white@2x.png" alt="Matrix Logo" class="default-logo" style="height:40px; width: 120px; margin-left: 20px;">
-                      </a>
-                    
-                </div>
-                        
-                <!-- Navbar Toggle for Mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-line"></span>
-                    <span class="navbar-toggler-line"></span>
-                    <span class="navbar-toggler-line"></span>
-                    <span class="navbar-toggler-line"></span>
-                </button>
-        
-                <!-- Navbar Items -->
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="margin-left: 100px;">
-                    <ul class="navbar-nav text-center">
-                        <li class="nav-item">
-                            <a href="index.html" class="inner-link nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="aboutus.html" class="inner-link nav-link" target="_blank">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="events.html" class="inner-link nav-link" target="_blank">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="wholeteam.html" class="inner-link nav-link" target="_blank">Our Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contactus.html" class="inner-link nav-link">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="alumni.html" class="inner-link nav-link" target="_blank">Alumni-Connect</a>
-                        </li>
-                        <li class="nav-item">
-                                <a href="cyberon25.html" class="inner-link nav-link" target="_blank" style="color: #00ff00; font-weight: bold;">CYBERON'25</a>
-                            </li>
-                    </ul>
-                </div>
-                <a class="navbar-brand me-2" href="https://www.scit.edu" style="max-width: 200px; padding-left: 20px;">
-                    <img src="images/Symbiosis Logo.png" alt="Symbiosis Logo" class="default-logo" style="height: 100%; width: 100%;">
-                </a>
-            </div>
-        </nav>
-        <!-- end navigation -->
-    </header>
-    <!-- HEADER END -->
+<main>
+  <header class="page-hero">
+    <div class="crumb">matrix@scit:~$ nc -l --listen-mode</div>
+    <h1 class="glitch sm" data-text="OPEN A CHANNEL">OPEN A CHANNEL</h1>
+    <p class="lead">Questions, suggestions, collaborations, sponsorships — we're listening on all ports. No firewall on this one.</p>
+  </header>
 
-    <body data-mobile-nav-style="classic" class="custom-cursor">
-    <video autoplay muted loop class="bg-video">
-        <source src="images/bg4.mp4" type="video/mp4">
-      </video>
+  <section style="padding-top:30px">
+    <div class="container contact-grid">
 
-    <div class="landing_page" style="margin-top: 5em;">
-        <div class="responsive-container-block big-container">
-          <div class="responsive-container-block container">
-            <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12 left-one">
-              <div class="content-box">
-                <p class="text-blk section-head">
-                  Get in Touch with Team Matrix!
-                </p>
-                <p class="text-blk section-subhead" style="color: beige;">
-                    Have questions, suggestions, or want to collaborate with us? Feel free to reach out! We’re here to connect, support, and engage with you.
-                </p>
-                <div class="icons-container">
-                
-                </div>
-              </div>
-            </div>
-            <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6 right-one" id="i1zj">
-              <form class="form-box">
-                <div class="container-block form-wrapper">
-                  <p class="text-blk contactus-head">
-                    <a class="link" href="">
-                    </a>
-                    Email Us
-                  </p>
-                  <p class="text-blk contactus-subhead">
-                    We will get back to you shortly!
-                  </p>
-                  <div class="responsive-container-block">
-                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i10mt-7">
-                      <input class="input" id="ijowk-7" name="FirstName" placeholder="Enter Full name">
-                    </div>
-                    
-                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-6 wk-ipadp-6 emial" id="ityct">
-                      <input class="input" id="ipmgh-7" name="Email" placeholder="Subject">
-                    </div>
-                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-7">
-                      <textarea aria-placeholder="Type message here" class="textinput" id="i5vyy-7" placeholder="Type message here"></textarea>
-                    </div>
-                  </div>
-                  <button class="submit-btn" onclick="sendEmail()">
-                    Send Mail
-                  </button>
-                </div>
-              </form>
-            </div>
+      <!-- info column -->
+      <div class="cinfo rv">
+        <div class="article">
+          <div class="sig">@</div>
+          <div>
+            <h4>// Mail</h4>
+            <a href="mailto:teammatrix@scit.edu">teammatrix@scit.edu</a>
+            <p>Best for collabs, sponsorships and alumni reconnects.</p>
           </div>
         </div>
-    </div>
-       
-
-    <!-- FOOTER START -->
-    <footer class="pb-30px" style="background-color: #1a1a1a;">
-        <div class="container">
-            <div class="row justify-content-center mb-4 md-mb-7 sm-mb-40px">
-                <!-- Logo Column -->
-                <div class="col-6 col-lg-2 col-sm-3 order-sm-1 md-mb-40px xs-mb-30px">
-                    <a href="#home" class="footer-logo d-inline-block inner-link">
-                        <img src="images/matrix-logo-white@2x.png" alt="Matrix Logo" style="max-width: 150px;">
-                    </a>
-                </div>
-                
-                <!-- Quick Links -->
-                <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-3 order-lg-2">
-                    <span class="fs-17 fw-600 d-block text-white mb-3">Quick Links</span>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="aboutus.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">About us</a></li>
-                        <li class="mb-2"><a href="wholeteam.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">Our Team</a></li>
-                        <li class="mb-2"><a href="events.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">Events</a></li>
-                        <li class="mb-2"><a href="alumni.html" class="text-light-gray text-decoration-none hover-text-white" target="_blank">Alumni-Connect</a></li>
-                    </ul>
-                </div>
-
-                <!-- Communities -->
-                <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-4 order-lg-3">
-                    <span class="fs-17 fw-600 d-block text-white mb-3">Communities</span>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="aboutus.html" class="text-light-gray text-decoration-none hover-text-white">ISACA</a></li>
-                        <li class="mb-2"><a href="aboutus.html" class="text-light-gray text-decoration-none hover-text-white">NULL Community</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="col-6 col-lg-2 col-sm-4 xs-mb-30px order-sm-5 order-lg-4">
-                    <span class="fs-17 fw-600 d-block text-white mb-3">Contact Us</span>
-                    <div class="text-light-gray">
-                        <p class="mb-2">SCIT, Pune</p>
-                        <a href="contactus.html" class="text-light-gray text-decoration-none hover-text-white">Mail us at: teammatrix@scit.edu</a>
-                    </div>
-                </div>
-
-                <!-- Newsletter
-                <div class="col-sm-9 col-lg-4 ps-30px md-ps-15px md-mb-40px xs-mb-0 order-sm-2 order-lg-5">
-                    <span class="fs-17 fw-600 d-block text-white mb-3">Subscribe Newsletter</span>
-                    <p class="text-light-gray mb-20px">Stay updated with our latest events and cybersecurity news.</p>
-                    <div class="d-inline-block w-100 newsletter-style-02 position-relative mb-15px">
-                        <form action="email-templates/subscribe-newsletter.php" method="post" class="position-relative w-100">
-                            <input class="input-small bg-transparent border-color-light-gray w-100 form-control required text-white" 
-                                type="email" name="email" placeholder="Enter your email...">
-                            <button type="submit" class="btn btn-primary pe-20px fs-12 fw-500 lg-ps-15px lg-pe-15px" 
-                                    aria-label="submit">Subscribe</button>
-                        </form>
-                    </div>
-                </div> -->
-            </div>
-
-            <!-- Footer Bottom -->
-            <div class="row footer-bottom border-top border-color-light-gray pt-30px align-items-center">
-                <div class="col-lg-9 text-center text-lg-start">
-                    <span class="text-light-gray fs-14 d-block lh-22">
-                        © 2024 Team Matrix. All rights reserved.
-                    </span>
-                </div>
-            </div>
+        <div class="article">
+          <div class="sig">⌖</div>
+          <div>
+            <h4>// Base of operations</h4>
+            <p>Symbiosis Centre for Information Technology (SCIT)<br>Rajiv Gandhi Infotech Park, Hinjawadi, Pune</p>
+          </div>
         </div>
-    </footer>
-    <!-- FOOTER END -->
+        <div class="article">
+          <div class="sig">▶</div>
+          <div>
+            <h4>// Socials</h4>
+            <a href="https://www.instagram.com/teammatrixscit/" target="_blank" rel="noopener">instagram.com/teammatrixscit</a>
+            <p>Event drops, reels and fest-week chaos.</p>
+          </div>
+        </div>
+        <div class="article">
+          <div class="sig">$</div>
+          <div>
+            <h4>// Response time</h4>
+            <p>We usually reply within 48 hours. During fest season, give us a little more buffer — we're probably soldering a CTF together.</p>
+          </div>
+        </div>
+      </div>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/vendors.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+      <!-- form column -->
+      <div class="term rv">
+        <div class="term-bar"><i></i><i></i><i></i><span>matrix@scit:~$ ./send_transmission</span></div>
+        <div class="term-pad">
+          <div class="prompt">> compose your transmission. we will get back to you shortly_</div>
+          <form class="mxform" onsubmit="sendEmail(event)">
+            <label for="f-name">$ your_name</label>
+            <input id="f-name" type="text" placeholder="Enter full name" required>
+            <label for="f-subj">$ subject</label>
+            <input id="f-subj" type="text" placeholder="What's this about?" required>
+            <label for="f-msg">$ message</label>
+            <textarea id="f-msg" placeholder="Type message here…" required></textarea>
+            <button class="btn solid" type="submit">Transmit ⏎</button>
+          </form>
+        </div>
+      </div>
 
-    <script>
-        function sendEmail() {
-          const bodymessage = document.getElementById("i5vyy-7").value;
-          const subject1 = document.getElementById("ipmgh-7").value;
-          const email = "teammatrix@scit.edu";
-          const subject = encodeURIComponent(subject1);
-          const body = encodeURIComponent(bodymessage);
-          window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`, '_blank');
-        }
-    </script>
+    </div>
+  </section>
+</main>
 
+<footer class="mxfoot">
+  <div class="container">
+    <div class="fgrid">
+      <div>
+        <img src="images/common/matrix-logo-white@2x.png" alt="Team Matrix">
+        <p>Student-driven cybersecurity committee at SCIT, Pune. Awareness · Innovation · Defense.</p>
+      </div>
+      <div>
+        <h5>// Quick Links</h5>
+        <ul>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="wholeteam.html">Our Team</a></li>
+          <li><a href="alumni.html">Alumni Connect</a></li>
+          <li><a href="archive.html">Archive</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>// Communities</h5>
+        <ul>
+          <li><a href="aboutus.html">ISACA</a></li>
+          <li><a href="aboutus.html">Null Community</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>// Contact</h5>
+        <p>SCIT, Pune<br><a href="mailto:teammatrix@scit.edu" style="color:var(--green-dim)">teammatrix@scit.edu</a></p>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Team Matrix. All rights reserved.</span>
+      <span><b>$ whoami</b> → defenders_of_the_digital_future</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/matrix.js"></script>
+<script>
+function sendEmail(e){
+  e.preventDefault();
+  const name=document.getElementById('f-name').value;
+  const subject=encodeURIComponent(document.getElementById('f-subj').value);
+  const body=encodeURIComponent(document.getElementById('f-msg').value+'\n\n— '+name);
+  window.location.href = 'mailto:teammatrix@scit.edu?subject='+subject+'&body='+body;
+}
+</script>
 </body>
-
 </html>
